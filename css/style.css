@@ -66,6 +66,8 @@ input:focus{
     outline: 0;
     box-shadow: none !important;
     border: 0;
+    outline: 0;
+    outline: 0px auto -webkit-focus-ring-color !important;
 }
 
 .clearFix{
@@ -113,19 +115,17 @@ input:focus{
 /*=============================
        menu part css
 ===============================*/
-.navbar{
+.menu{
     background: var(--nav-bg);
     padding: 20px 0;
 }
-.navbar .row{
-    width: 100%;
-}
 
-.navbar .navbar-nav .nav-item{
+
+.menu .navbar-nav .nav-item{
     padding: 0 10px;
 }
 
-.navbar .navbar-nav .nav-link{
+.menu .navbar-nav .nav-link{
     font-family: 'Arimo',sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -133,7 +133,7 @@ input:focus{
     transition: .2s;
 }
 
-.navbar .navbar-nav .nav-link:hover{
+.menu .navbar-nav .nav-link:hover{
     color: var(--brand-col);
 }
 
@@ -169,7 +169,7 @@ input:focus{
     font-size: 16px;
     background: var(--wh-col);
     padding: 0 18px;
-    box-shadow: 3px 5px 10px rgba(0,0,0,.05);
+    box-shadow: 3px 5px 10px rgba(0,0,0,.05) !important;
 }
 
 .newItem_btn:hover{
@@ -221,6 +221,7 @@ input:focus{
     background: #f1f1f1;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
+    cursor: pointer;
 
 }
 
