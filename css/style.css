@@ -1,0 +1,100 @@
+:root{
+    --wh-col: #fff;
+    --44-col: #444;
+}
+
+/*import font from google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap');
+
+/*============================
+      TABLE OF CONTENT
+------------------------------
+    1. Common CSS
+    2. header top css
+    3. menu part css
+==============================*/
+
+/*=============================
+       Common CSS
+===============================*/
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+a,
+a:hover{
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul,ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin: 0;
+    padding: 0;
+}
+
+span{
+    display: inline-block;
+}
+
+button,
+input:focus{
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+}
+
+.clearFix{
+    clear: both;
+}
+
+
+/*=============================
+       header top css
+===============================*/
+
+.header_top{
+    background: var(--wh-col);
+}
+
+.header_top_logo{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header_top_list li{
+    display: inline-block;
+    font-family: 'Amimo',sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.header_top_list li a{
+    color: var(--44-col);
+    padding: 38px 18px;
+}
+
+.header_top_list li a:hover{
+    background: linear-gradient(to right, rgba(101, 81, 202, 0.88), #a394f1);
+    color: var(--wh-col);
+}
+
+
+
+/*=============================
+       menu part css
+===============================*/
