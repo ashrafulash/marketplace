@@ -9,6 +9,10 @@
 
 /*import font from google fonts*/
 @import url('https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap');
+@font-face{
+    src:url(../fonts/Phenomena-Bold.ttf);
+    font-family: pheno;
+}
 
 /*============================
       TABLE OF CONTENT
@@ -35,6 +39,10 @@ a,
 a:hover{
     text-decoration: none;
     display: inline-block;
+}
+
+img{
+    vertical-align: middle;
 }
 
 ul,ol{
@@ -355,4 +363,76 @@ input:focus{
 /*=============================
     footer part css
 ===============================*/
+.footer_part{
+    padding: 70px 0 30px 0;
+    background: var(--wh-col);
+}
+
+.footer_logo{
+    padding-bottom: 35px;
+}
+
+.footer_col_one{}
+.footer_col_one ul{}
+.footer_col_one ul li{
+    padding-bottom: 14px;
+}
+
+.footer_col_one ul li a,
+.footer_col_two ul li a,
+.footer_col_four ul li a,
+.footer_col_three ul li p
+{
+    font-family: 'Arimo',sans-serif;
+    font-weight: 400;
+    color: var(--44-col);
+    transition: .2s;
+}
+
+.footer_col_one ul li a:hover,
+.footer_col_four ul li a:hover,
+.footer_col_two ul li a:hover{
+    color: var(--brand-col);
+}
+
+.footer_col_two ul li{
+    padding-bottom: 14px;
+}
+
+.footer_col_three ul li:first-child{
+    padding-bottom: 24px;
+}
+.footer_col_four ul:nth-child(2) li a{
+  margin-right: 30px;
+}
+
+.footer_col_four ul:nth-child(2){
+    padding-bottom: 25px;
+}
+
+
+
+
+.footer_title{
+    padding-bottom: 28px;
+}
+
+
+.footer_title h2{
+    color: var(--brand-col);
+    font-size: 26px;
+    font-family: 'pheno',sans-serif;
+}
+
+.copyright{
+    padding-top: 30px;
+    border-top: 1px solid #f1f1f1;
+    margin-top: 30px;
+}
+
+.copyright p{
+    font-family: 'Arimo',sans-serif;
+    font-size: 14px;
+    color: #999;
+}
 
