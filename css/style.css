@@ -1,6 +1,10 @@
 :root{
     --wh-col: #fff;
     --44-col: #444;
+    --nav-bg: #f5f5f5;
+    --brand-col: #6652cb;
+    
+    --lin-bg: linear-gradient(to right, #6a56cd, #a293f0);
 }
 
 /*import font from google fonts*/
@@ -12,6 +16,7 @@
     1. Common CSS
     2. header top css
     3. menu part css
+    4. banner part css
 ==============================*/
 
 /*=============================
@@ -50,11 +55,17 @@ span{
     display: inline-block;
 }
 
+.form-control{
+    border: 0;
+}
+
 button,
 input:focus{
+    background-color: #fff;
+    border-color: transparent !important;
     outline: 0;
+    box-shadow: none !important;
     border: 0;
-    box-shadow: none;
 }
 
 .clearFix{
@@ -78,9 +89,9 @@ input:focus{
 
 .header_top_list li{
     display: inline-block;
-    font-family: 'Amimo',sans-serif;
+    font-family: 'Arimo',sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .header_top_list li a{
@@ -88,9 +99,13 @@ input:focus{
     padding: 38px 18px;
 }
 
-.header_top_list li a:hover{
-    background: linear-gradient(to right, rgba(101, 81, 202, 0.88), #a394f1);
+.header_top_list li:nth-child(3) a{
+    background: var(--lin-bg);
     color: var(--wh-col);
+}
+
+.header_top_list li:not(:nth-child(3)) a:hover{
+    color: var(--brand-col);
 }
 
 
@@ -98,3 +113,120 @@ input:focus{
 /*=============================
        menu part css
 ===============================*/
+.navbar{
+    background: var(--nav-bg);
+    padding: 20px 0;
+}
+.navbar .row{
+    width: 100%;
+}
+
+.navbar .navbar-nav .nav-item{
+    padding: 0 10px;
+}
+
+.navbar .navbar-nav .nav-link{
+    font-family: 'Arimo',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--44-col);
+    transition: .2s;
+}
+
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--brand-col);
+}
+
+.cate_btn{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-transform: uppercase;
+    font-family: 'Arimo',sans-serif;
+    font-weight: 600;
+    color: var(--44-col);
+    font-size: 16px;
+    background: transparent;
+}
+
+.cate_btn:hover{
+    color: var(--brand-col);
+}
+
+.cate_btn span:nth-child(2){
+    vertical-align: bottom;
+    padding-left: 8px;
+     transform: translateY(3px);
+}
+
+.newItem_btn{
+    align-items: center;
+    height: 100%;
+    text-transform: capitalize;
+     font-family: 'Arimo',sans-serif;
+    font-weight: 400;
+    color: var(--brand-col);
+    font-size: 16px;
+    background: var(--wh-col);
+    padding: 0 18px;
+    box-shadow: 3px 5px 10px rgba(0,0,0,.05);
+}
+
+.newItem_btn:hover{
+    background: var(--brand-col);
+    color: var(--wh-col);
+}
+
+.newItem_btn span:nth-child(2){
+    vertical-align: bottom;
+    padding-left: 5px;
+    transform: translateY(3px);
+}
+
+/*=============================
+    banner part css
+===============================*/
+
+.banner_part{
+    background: var(--lin-bg);
+    padding: 100px 0;
+}
+
+.banner_text h2{
+    color: var(--wh-col);
+    font-size: 38px;
+    font-family: 'Arimo',sans-serif;
+    font-weight: 400;
+    padding-bottom: 28px;
+}
+
+
+.banner_search{
+    padding: 0 50px;
+}
+
+.search_input{
+    padding: 21px 18px;
+    
+}
+.search_input::placeholder{
+    font-size: 14px;
+    font-family: 'Arimo',sans-serif;
+    font-weight: 400;
+    opacity: 1;
+    color: #999;
+}
+
+.search_btn{
+    background: #f1f1f1;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+}
+
+.search_btn span{
+    margin: 0 5px;
+    border: 0;
+    background: inherit;
+}
+
