@@ -1,6 +1,6 @@
 @media (max-width: 499.98px) {
-    
-/*===================
+
+    /*===================
     Home page CSS
 =====================*/
 
@@ -13,18 +13,64 @@
         font-size: 14px;
         margin-right: 10px;
     }
-    
-    .header_top_list li:nth-child(3) a{
+
+    .header_top_list li:nth-child(3) a {
         padding: 10px 10px;
     }
-    
-    .header_top_list li{
+
+    .header_top_list li {
         margin-top: 10px;
         margin-bottom: 10px;
     }
+
     
+    .menu{
+        position: relative;
+    }
+
+    .ord-m-0 {
+        order: 0;
+        max-width: 138px;
+    }
+
+    .ord-m-1 {
+        order: 1;
+        padding: 0;
+    }
+
+    .ord-m-2 {
+        order: 2;
+    }
+
+
+    .cate_btn {
+        font-size: 14px;
+    }
+
+    .newItem_btn {
+        box-shadow: 0 0 0 transparent !important;
+        background:transparent;
+        transform: translateX(-48px);
+    }
     
+    .newItem_btn:hover{
+        background: transparent;
+        color: var(--brand-col);
+    }
+.toggle_btn {
+	position: absolute;
+	right: 9px;
+	top: -30px;
+	color: var(--brand-col);
+	width: 43px;
+	height: 38px;
+}
     
+    .menu .navbar-nav .nav-item:first-child{
+        margin-top: 10px;
+    }
+
+
 }
 
 @media (min-width: 500px) and (max-width: 575.98px) {
@@ -38,25 +84,69 @@
         font-size: 14px;
         margin-right: 10px;
     }
-    
-    .header_top_list li:nth-child(3) a{
+
+    .header_top_list li:nth-child(3) a {
         padding: 10px 10px;
     }
-    
-    .header_top_list li{
+
+    .header_top_list li {
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    
-    .max-wd-sm-4{
+
+    .max-wd-sm-4 {
         max-width: 30%
-            
+    }
+
+    .max-wd-sm-6 {
+        max-width: 70%;
+
     }
     
-    .max-wd-sm-6{
-        max-width: 70%;
-        
+    
+    
+    .menu{
+        position: relative;
     }
+
+    .ord-m-0 {
+        order: 0;
+        max-width: 138px;
+    }
+
+    .ord-m-1 {
+        order: 1;
+        padding: 0;
+    }
+
+    .ord-m-2 {
+        order: 2;
+    }
+
+
+    .cate_btn {
+        font-size: 14px;
+    }
+
+    .newItem_btn {
+        box-shadow: 0 0 0 transparent !important;
+        background:transparent;
+        transform: translateX(-48px);
+    }
+    
+    .newItem_btn:hover{
+        background: transparent;
+        color: var(--brand-col);
+    }
+.toggle_btn {
+	position: absolute;
+	right: 9px;
+	top: -30px;
+	color: var(--brand-col);
+	width: 43px;
+	height: 38px;
+}
+
 
 
 

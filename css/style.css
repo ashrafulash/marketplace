@@ -71,6 +71,7 @@ span{
 }
 
 button,
+button:focus,
 input:focus{
     background-color: #fff;
     border-color: transparent !important;
@@ -79,6 +80,7 @@ input:focus{
     border: 0;
     outline: 0;
     outline: 0px auto -webkit-focus-ring-color !important;
+    background: transparent;
 }
 
 .clearFix{
