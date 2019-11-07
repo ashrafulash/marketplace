@@ -23,8 +23,8 @@
         margin-bottom: 10px;
     }
 
-    
-    .menu{
+
+    .menu {
         position: relative;
     }
 
@@ -49,25 +49,27 @@
 
     .newItem_btn {
         box-shadow: 0 0 0 transparent !important;
-        background:transparent;
-        
-      
+        background: transparent;
+
+
     }
-    
-    .newItem_btn:hover{
+
+    .newItem_btn:hover {
         background: transparent;
         color: var(--brand-col);
     }
-.toggle_btn {
-	position: absolute;
-	right: 9px;
-	top: -30px;
-	color: var(--brand-col);
-	width: 43px;
-	height: 38px;
-}
-    
-    .menu .navbar-nav .nav-item:first-child{
+
+    .toggle_btn {
+        position: absolute;
+        right: 9px;
+        top: -30px;
+        color: var(--brand-col);
+        width: 43px;
+        height: 38px;
+        background: red !important;
+    }
+
+    .menu .navbar-nav .nav-item:first-child {
         margin-top: 10px;
     }
 
@@ -103,10 +105,10 @@
         max-width: 70%;
 
     }
-    
-    
-    
-    .menu{
+
+
+
+    .menu {
         position: relative;
     }
 
@@ -131,21 +133,22 @@
 
     .newItem_btn {
         box-shadow: 0 0 0 transparent !important;
-        background:transparent;
+        background: transparent;
     }
-    
-    .newItem_btn:hover{
+
+    .newItem_btn:hover {
         background: transparent;
         color: var(--brand-col);
     }
-.toggle_btn {
-	position: absolute;
-	right: 9px;
-	top: -30px;
-	color: var(--brand-col);
-	width: 43px;
-	height: 38px;
-}
+
+    .toggle_btn {
+        position: absolute;
+        right: 9px;
+        top: -30px;
+        color: var(--brand-col);
+        width: 43px;
+        height: 38px;
+    }
 
 
 
