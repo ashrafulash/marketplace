@@ -50,6 +50,7 @@
     .newItem_btn {
         box-shadow: 0 0 0 transparent !important;
         background: transparent;
+        padding: 0;
 
 
     }
@@ -61,12 +62,12 @@
 
     .toggle_btn {
         position: absolute;
-        right: 9px;
+        right: 10px;
         top: -30px;
         color: var(--brand-col);
         width: 43px;
         height: 38px;
-        background: red !important;
+        z-index: 999;
     }
 
     .menu .navbar-nav .nav-item:first-child {
@@ -134,6 +135,7 @@
     .newItem_btn {
         box-shadow: 0 0 0 transparent !important;
         background: transparent;
+        padding: 0;
     }
 
     .newItem_btn:hover {
@@ -143,11 +145,12 @@
 
     .toggle_btn {
         position: absolute;
-        right: 9px;
+        right: 10px;
         top: -30px;
         color: var(--brand-col);
         width: 43px;
         height: 38px;
+        z-index: 999;
     }
 
 

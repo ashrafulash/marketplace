@@ -291,6 +291,30 @@ input:focus{
     transform: translateY(3px);
 }
 
+
+.fixedMenu {
+	position: fixed !important;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	width: 100%;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, .2);
+	border-bottom: 1px solid var(--brand-col);
+    
+    animation: menuAni 1s;
+}
+
+
+@keyframes menuAni{
+    0%{
+        top: -100px;
+    }
+    
+    100%{
+        top: 0;
+    }
+}
+
 /*=============================
     banner part css
 ===============================*/
