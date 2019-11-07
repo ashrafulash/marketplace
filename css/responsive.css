@@ -50,7 +50,8 @@
     .newItem_btn {
         box-shadow: 0 0 0 transparent !important;
         background:transparent;
-        transform: translateX(-48px);
+        
+      
     }
     
     .newItem_btn:hover{
@@ -131,7 +132,6 @@
     .newItem_btn {
         box-shadow: 0 0 0 transparent !important;
         background:transparent;
-        transform: translateX(-48px);
     }
     
     .newItem_btn:hover{
