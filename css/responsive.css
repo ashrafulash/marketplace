@@ -1,0 +1,84 @@
+@media (max-width: 499.98px) {
+    
+/*===================
+    Home page CSS
+=====================*/
+
+    .header_top_logo {
+        padding-top: 26px;
+    }
+
+    .header_top_list li a {
+        padding: 10px 0px;
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    
+    .header_top_list li:nth-child(3) a{
+        padding: 10px 10px;
+    }
+    
+    .header_top_list li{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    
+    
+}
+
+@media (min-width: 500px) and (max-width: 575.98px) {
+    /*===================
+    Home page CSS
+=====================*/
+
+
+    .header_top_list li a {
+        padding: 10px 0px;
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    
+    .header_top_list li:nth-child(3) a{
+        padding: 10px 10px;
+    }
+    
+    .header_top_list li{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .max-wd-sm-4{
+        max-width: 30%
+            
+    }
+    
+    .max-wd-sm-6{
+        max-width: 70%;
+        
+    }
+
+
+
+
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    ...
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    ...
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    ...
+}
+
+
+@media (min-width: 1200px) {
+    ...
+}
