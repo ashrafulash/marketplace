@@ -24,6 +24,15 @@
     5. newest item css
     7. freebie part css
     8. footer part css
+
+--------------------------------
+    Product Detail Page
+
+    9. bread part css
+    10. detail part css
+--------------------------------
+
+
 ==============================*/
 
 /*=============================
@@ -458,7 +467,167 @@ input:focus{
 
 .copyright p{
     font-family: 'Arimo',sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     color: #999;
 }
+
+/*=============================
+       bread part css
+===============================*/
+.bread_part{
+    background: var(--lin-bg);
+    padding: 20px 0;
+}
+
+.breadcrumb {
+
+	padding: 0;
+	margin: 0;
+	background-color: transparent;
+	border-radius: 0;
+}
+
+.bread_part .breadcrumb{
+    line-height: 42px;
+}
+
+.breadcrumb-item + .breadcrumb-item,
+.breadcrumb-item a{
+    color: #fff;
+    font-family: 'Arimo',sans-serif;
+    font-size: 14px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before{
+    content: '>';
+    color: #fff;
+}
+
+/*=============================
+       detail part CSS
+===============================*/
+.detail_part{
+    padding: 70px 0;
+}
+
+.detail_share_part{
+    padding: 16px 35px;
+    background: #fff;
+    box-shadow: 5px 5px 20px rgba(33, 57, 64, 0.1);
+    border-radius: 5px;
+}
+.detail_share_part li{
+    display: inline-block;
+}
+
+.detail_share_part li:first-child{
+    font-family: 'Arimo',sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+.detail_share_part li a{
+    color: var(--44-col);
+    font-size: 16px;
+    margin: 0 12px;
+}
+
+.detail_share_part li a:hover{
+    color:#fa5050;
+}
+
+
+.product_info{
+    box-shadow: 5px 5px 20px rgba(33, 57, 64, 0.1);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.product_info ul li {
+	display: inline-block;
+	font-family: 'Amimo',sans-serif;
+	font-weight: 400;
+	padding: 20px 15px;
+	margin: 0 1px;
+}
+
+
+
+.product_info ul li:not(:last-child){
+    border-left: 1px solid #ddd;
+}
+
+.product_info ul li[data-slick-index="0"]{
+    border-left: 1px solid transparent;
+}
+
+
+.product_info ul li h3{
+    color: var(--44-col);
+    font-size: 16px;
+}
+
+.product_info ul li p{
+    color: #999;
+    font-size: 14px;
+}
+
+.detail_next_btn{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+    width: 40px;
+    height: 40px;
+    border: 1px solid #dedede;
+    color: #dedede;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px !important;
+    display: inline-block !important;
+    background: #fff;
+    box-shadow: 0px 5px 20px rgba(33, 57, 64, 0.1);
+    cursor: pointer;
+    
+}
+.detail_next_btn:hover{
+    background: var(--brand-col);
+    color: #fff;
+    border-color: var(--brand-col);
+    display: none;
+}
+
+.detail_prev_btn{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border: 1px solid #dedede;
+    color: #dedede;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px !important;
+    display: inline-block !important;
+    background: #fff;
+    box-shadow: 0px 5px 20px rgba(33, 57, 64, 0.1);
+    cursor: pointer;
+    display: none !important;
+    visibility: hidden;
+    
+}
+.detail_prev_btn:hover{
+    background: var(--brand-col);
+    color: #fff;
+    border-color: var(--brand-col);
+}
+
+.slick-slider{
+    padding: 0 20px;
+}
+
+
+
+
+
 
