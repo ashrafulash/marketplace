@@ -146,7 +146,7 @@ input:focus{
     
 }
 
-.product_box .overlay big{
+.product_box .overlay span:nth-child(1){
     font-size: 40px;
     font-family: 'Arimo',sans-serif;
     font-weight: 600;
@@ -154,9 +154,9 @@ input:focus{
     text-align: right;
 }
 
-.product_box .overlay h2,
-.product_box .overlay small,
-.product_box .overlay p{
+.product_box .overlay span:nth-child(2),
+.product_box .overlay span:nth-child(3),
+.product_box .overlay span:nth-child(4){
     position: absolute;
     bottom: 20px;
     left: 20px;
@@ -165,16 +165,16 @@ input:focus{
 
 
 
-.product_box .overlay h2{
+.product_box .overlay span:nth-child(2){
     font-size: 18px;
     bottom: 74px !important;
     font-weight: 400;
 }
-.product_box .overlay small{
+.product_box .overlay span:nth-child(3){
     bottom: 53px;
     font-size: 12px;
 }
-.product_box .overlay p{
+.product_box .overlay span:nth-child(4){
     font-size: 16px;
     font-weight: 400;
 }
@@ -378,7 +378,7 @@ input:focus{
     background: var(--nav-bg);
 }
 
-.freebie_box .overlay big{
+.freebie_box .overlay span:nth-child(1){
     font-size: 20px;
     font-family: 'Arimo',sans-serif;
     font-weight: 600;
