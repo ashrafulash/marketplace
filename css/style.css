@@ -627,7 +627,20 @@ input:focus{
 }
 
 
+.detail_part_profile li{
+    display: inline-block;
+    vertical-align: middle;
+}
 
+
+.detail_part_profile li:first-child{
+    width: 100px;
+}
+
+.detail_part_profile li:last-child{
+   width: 300px;
+
+}
 
 
 
