@@ -30,6 +30,7 @@
 
     9. bread part css
     10. detail part css
+    11. detail part left
 --------------------------------
 
 
@@ -516,6 +517,31 @@ input:focus{
     box-shadow: 5px 5px 20px rgba(33, 57, 64, 0.1);
     border-radius: 5px;
 }
+
+.detail_share_part .fb{
+	color: #4267B2;
+}
+
+
+.detail_share_part .twit{
+	color: #1DA1F2;
+}
+
+
+.detail_share_part .google {
+    color:#fa5050;
+}
+
+
+.detail_share_part .pri {
+    color:#E6001A;
+}
+
+
+.detail_share_part .dribble {
+    color:#B2215A;
+}
+
 .detail_share_part li{
     display: inline-block;
 }
@@ -531,9 +557,7 @@ input:focus{
     margin: 0 12px;
 }
 
-.detail_share_part li a:hover{
-    color:#fa5050;
-}
+
 
 
 .product_info{
@@ -544,7 +568,7 @@ input:focus{
 
 .product_info ul li {
 	display: inline-block;
-	font-family: 'Amimo',sans-serif;
+	font-family: 'Arimo',sans-serif;
 	font-weight: 400;
 	padding: 20px 15px;
 	margin: 0 1px;
@@ -626,6 +650,8 @@ input:focus{
     padding: 0 20px;
 }
 
+/*--Detail Profile--*/
+
 
 .detail_part_profile li{
     display: inline-block;
@@ -633,14 +659,305 @@ input:focus{
 }
 
 
-.detail_part_profile li:first-child{
+.detail_part_profile li.pp:first-child{
     width: 100px;
 }
 
 .detail_part_profile li:last-child{
-   width: 300px;
+   width: 275px;
 
 }
+
+.detail_product_detail_page{
+    padding: 50px 30px;
+    background: #fff;
+    box-shadow: 0px 5px 20px rgba(33, 57, 64, 0.1);
+    margin-top: 20px;
+}
+
+.profile_title{
+    font-size: 22px;
+    color: var(--44-col);
+    font-family: 'Arimo',sans-serif;
+    font-weight: 400;
+}
+
+.detail_part_profile{
+    padding: 30px 0;
+}
+
+.detail_profile_image{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    border-radius: 50%;
+}
+
+.creator_detail li{
+    padding-left: 5px;
+    color: #999;
+    font-family: 'Arimo',sans-serif;
+    font-size: 16px;
+}
+
+.creator_detail li:first-child{
+    font-size: 18px;
+    color: var(--44-col);
+}
+
+.ct{
+    width: 95px;
+}
+
+
+.detail_page_rating{
+    padding-bottom: 30px;
+}
+
+.detail_page_rating li:first-child{
+    font-family: 'Arimo',sans-serif;
+    color: var(--44-col);
+    font-size: 20px;
+}
+
+.detail_page_rating li:last-child span:first-child{
+    color: #ffb504;
+}
+
+.detail_page_rating li:last-child span:last-child{
+    color: #999;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.detail_part_card{}
+.detail_part_card h3{
+    font-family: 'Arimo',sans-serif;
+    font-size: 20px;
+    color: var(--44-col);
+    padding-bottom: 15px;
+}
+
+.detail_part_card_btn{}
+
+.detail_part_card_btn li button{
+    display: block;
+    padding: 18px 20px;
+    font-family: 'Arimo',sans-serif;
+    text-align: center;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.detail_part_card_btn li:first-child button{
+    margin-bottom: 20px;
+    background: var(--lin-bg);
+    color: #fff;
+    border: 1px solid transparent !important;
+    
+}
+
+.detail_part_card_btn li:last-child button{
+    border: 1px solid #ddd !important;
+    color: var(--brand-col);
+    
+}
+
+.detail_part_card_btn li:last-child button:hover{
+    background: var(--lin-bg);
+    color: #fff;
+    border-color: transparent;
+}
+
+.detail_part_card_btn li:first-child button:hover{
+    background: transparent;
+    color: var(--brand-col);
+    border: 1px solid #ddd !important;
+}
+
+.select_price li:last-child{
+    padding-bottom: 25px;
+}
+
+.select_price li{
+    display: block;
+}
+
+.select_price li .rdo{
+    position: relative;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border: 2px solid #adadad;
+    border-radius: 50%;
+    top: 4px;
+    left: 0;
+    float: left;
+}
+
+.select_price li .rdo:after{
+    width: 6px;
+    height: 6px;
+    background: transparent;
+    border-radius: 50%;
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.select_price li .rdo
+
+.select_price li label,
+.select_price li span
+{
+    color: var(--44-col);
+    font-family: 'Arimo',sans-serif;
+    font-size: 16px;
+}
+
+.select_price li label{
+    margin-left: 7px;
+    cursor: pointer;
+}
+
+.select_price li span{
+    float: right;
+}
+
+.select_price li input{
+    width: 0;
+}
+
+
+.select_price li input:checked ~ label
+{
+    color: var(--brand-col);
+}
+
+.select_price li input:checked ~ .rdo:after{
+    background: var(--brand-col);
+    
+}
+
+.select_price li input:checked ~ .rdo{
+    border-color:  var(--brand-col);
+}
+
+
+
+.select_price li input:checked ~ span
+{
+    color: var(--brand-col);
+}
+
+
+.fixed_card{
+	position: fixed;
+	top: 80px;
+	background: #fff;
+	z-index: 999;
+	
+	animation: card_ani 1s;
+}
+
+@keyframes card_ani{
+	0%{
+		top: 60px;
+	}
+	
+	100%{
+		top: 80px;
+	}
+}
+
+
+/*=============================
+       detail part left
+===============================*/
+.detail_image_left{
+    position: relative;
+    overflow: hidden;
+}
+
+.detail_image_left .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.8);
+    color: #fff;
+    font-family: 'Arimo',sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    transform: scale(1.05);
+    opacity: 0;
+    transition: all linear .2s;
+}
+
+.detail_image_left:hover .overlay{
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+
+.preview_text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.add_to_wish{
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    
+}
+
+.add_to_wish:hover{
+    color: #fa5050;
+}
+
+.detail_para p{
+	font-family: 'Arimo',sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 26px;
+}
+
+.preview_text i{
+    padding-left: 10px;
+}
+
+.feature_and_file h3{
+	font-family: 'Arimo',sans-serif;
+	font-size: 20px;
+	color: var(--44-col) !important;
+	font-weight: 600;
+	padding:30px 0;
+}
+
+.detail_para p:first-child{
+	padding-bottom: 30px;
+}
+
+.feature_and_file ul li{
+	font-family: 'Arimo',sans-serif;
+	font-size: 16px;
+	color:var(--44-col);
+	line-height: 27px;
+	font-weight: 400;
+}
+
+
+
 
 
 

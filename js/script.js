@@ -4,6 +4,8 @@
     
     
     var menu = $(".menu");
+	
+	
     
     $(document).scroll(function(){
         
@@ -15,6 +17,34 @@
         }else{
             menu.removeClass("fixedMenu");
         }
+		
+	 //fixing product detail page
+		
+		var product_card = $(".detail_product_detail_page");
+		
+		 if(scroll > 400){
+            
+            product_card.addClass("fixed_card");
+        }else{
+            product_card.removeClass("fixed_card");
+        }
+		
+		
+		var doc = $(document).height();
+		var screen = $(window).height();
+		
+		var footer = $(".footer").height();
+		
+		var main = doc - footer;
+	
+		console.log(main);
+		
+		if((scroll + screen) > main){
+			
+			product_card.removeClass("fixed_card");
+			
+		}
+		
         
         
     });
