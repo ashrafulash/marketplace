@@ -2,456 +2,700 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title> Product Detail</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+	<title> Product Detail</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
 
-    <!--=========================
+	<!--=========================
         header part start
     ==========================-->
-    <div class="header_top">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-sm-6 max-wd-sm-4">
-                    <div class="header_top_logo">
-                       <a href="index.html"> <img src="images/logo.png" alt="logo"></a>
-                    </div>
+	<div class="header_top">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-sm-6 max-wd-sm-4">
+					<div class="header_top_logo">
+						<a href="index.html"> <img src="images/logo.png" alt="logo"></a>
+					</div>
 
-                </div>
-                <div class="col-lg-6 col-sm-6 max-wd-sm-6">
-                    <ul class="header_top_list text-lg-right">
-                        <li><a href="#">How it Works</a></li>
-                        <li><a href="#">My Cart</a></li>
-                        <li><a href="#">Login / Signup</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+				</div>
+				<div class="col-lg-6 col-sm-6 max-wd-sm-6">
+					<ul class="header_top_list text-lg-right">
+						<li><a href="#">How it Works</a></li>
+						<li><a href="#">My Cart</a></li>
+						<li><a href="#">Login / Signup</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <!--=========================
+	<!--=========================
         header part end
     ==========================-->
 
-    <!--=========================
+	<!--=========================
         menu part start
     ==========================-->
-    <nav class="menu">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2 ord-m-0 col">
-                    <button class="cate_btn">
-                        <span>Categories</span>
-                        <span><i class="fas fa-angle-down"></i></span>
-                    </button>
-                </div>
-                <div class="col-lg-8 ord-m-2">
-                    <div class=" navbar-expand-lg">
-                        <button class="navbar-toggler toggle_btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	<nav class="menu">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 ord-m-0 col">
+					<button class="cate_btn">
+						<span>Categories</span>
+						<span><i class="fas fa-angle-down"></i></span>
+					</button>
+				</div>
+				<div class="col-lg-8 ord-m-2">
+					<div class=" navbar-expand-lg">
+						<button class="navbar-toggler toggle_btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 
-                            <i class="fas fa-bars"></i>
+							<i class="fas fa-bars"></i>
 
-                        </button>
+						</button>
 
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav m-auto">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">All Items<span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Wordpress</a>
-                                </li>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav m-auto">
+								<li class="nav-item active">
+									<a class="nav-link" href="#">All Items<span class="sr-only">(current)</span></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Wordpress</a>
+								</li>
 
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">HTML</a>
-                                </li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">HTML</a>
+								</li>
 
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">CMS </a>
-                                </li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">CMS </a>
+								</li>
 
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">PSD</a>
-                                </li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">PSD</a>
+								</li>
 
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Sketch/XD</a>
-                                </li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Sketch/XD</a>
+								</li>
 
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Muse</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 text-lg-right ord-m-1 col">
+								<li class="nav-item">
+									<a class="nav-link" href="#">Muse</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 text-lg-right ord-m-1 col">
 
-                    <button class="newItem_btn">
-                        <span>Newest Item</span>
-                        <span><i class="fas fa-angle-down"></i></span>
-                    </button>
+					<button class="newItem_btn">
+						<span>Newest Item</span>
+						<span><i class="fas fa-angle-down"></i></span>
+					</button>
 
-                </div>
-            </div>
+				</div>
+			</div>
 
-        </div>
-    </nav>
+		</div>
+	</nav>
 
 
-    <!--=========================
+	<!--=========================
         menu part end
     ==========================-->
 
-    <!--=========================
+	<!--=========================
         breadcrump part start
     ==========================-->
-    <section class="bread_part">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">HTML</li>
-                            <li class="breadcrumb-item active" aria-current="page">Corporate</li>
-                            <li class="breadcrumb-item active" aria-current="page">Business</li>
-                        </ol>
-                    </nav>
-                </div>
-                <div class="col-lg-6">
-                    <form action="#">
-                        <div class="input-group">
-                            <input type="text" class="form-control search_input" placeholder="You can search here via name" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                            <div class="input-group-append search_btn">
-                                <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+	<section class="bread_part">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="#">Home</a></li>
+							<li class="breadcrumb-item active" aria-current="page">HTML</li>
+							<li class="breadcrumb-item active" aria-current="page">Corporate</li>
+							<li class="breadcrumb-item active" aria-current="page">Business</li>
+						</ol>
+					</nav>
+				</div>
+				<div class="col-lg-6">
+					<form action="#">
+						<div class="input-group">
+							<input type="text" class="form-control search_input" placeholder="You can search here via name" aria-label="Recipient's username" aria-describedby="basic-addon2">
+							<div class="input-group-append search_btn">
+								<span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
 
-    <!--=========================
+	<!--=========================
         breadcrump part end
     ==========================-->
 
-    <!--=========================
+	<!--=========================
         detail part start
     ==========================-->
-    <div class="detail_part">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7">
+	<div class="detail_part">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7">
 
-    <!--=========================
+					<!--=========================
         detail part left start
     ==========================-->
-                    <div class="product_detail_left">
+					<div class="product_detail_left">
 
-                        <div class="detail_image_left mb-5">
-                            <img class="w-100" src="images/detail_page_image.png" alt="detail_page_image">
-                            <a href="https://www.fiverr.com/themland" class="overlay">
+						<div class="detail_image_left mb-5">
+							<img class="w-100" src="images/detail_page_image.png" alt="detail_page_image">
+							<a href="https://www.fiverr.com/themland" class="overlay">
 
-                                <span class="add_to_wish"><i class="far fa-heart"></i></span>
+								<span class="add_to_wish"><i class="far fa-heart"></i></span>
 
-                                <span class="preview_text">Live Preview <i class="fas fa-external-link-alt"></i></span>
+								<span class="preview_text">Live Preview <i class="fas fa-external-link-alt"></i></span>
 
-                            </a>
-                        </div>
+							</a>
+						</div>
 
-                        <!-- product paragraph-->
-                        <div class="detail_para">
-                            <p>Jobortunity - Job Board PSD Template is an awesome design idea for your online multipurpose solutions. Easy and intuitive multipurpose solutions experience. PSD files are well organized and named accordingly so its very easy to customize and update.Total 09 PSD files have been included.</p>
+						<!-- product paragraph-->
+						<div class="detail_para">
+							<p>Jobortunity - Job Board PSD Template is an awesome design idea for your online multipurpose solutions. Easy and intuitive multipurpose solutions experience. PSD files are well organized and named accordingly so its very easy to customize and update.Total 09 PSD files have been included.</p>
 
-                            <p>We have included best practice of web development – you can create great website layout based on Twitter Bootstrap or Grid 1170px.</p>   
-                                
-                        </div>
-                        
-                        <div class="feature_and_file">
-                            <h3>01 Template Features:</h3>
-                            <ul>
-                                <li>09 PSD Files with Layer Styles.</li>
-                                <li>PSD Well Organized, with named layers and groups</li>
-                                <li>Images are not included</li>
-                                <li>Free Fonts used</li>
-                                <li>FontAwesome Icon</li>
-                                <li>Google font used (Arimo)</li>
-                                <li>Fully Customizable</li>
-                                <li>Pixel Perfect</li>
-                                <li>Great Support</li>
-                                <li>And many More....</li>
-                            </ul>
-                            
-                               <h3> 02 PSD Files:</h3>
-                            <ul>
+							<p>We have included best practice of web development – you can create great website layout based on Twitter Bootstrap or Grid 1170px.</p>
 
-                                <li>01_Home_Page</li>
-                                <li>02_Recent_Jobs</li>
-                                <li>03_Recent_Jobs_with_Sidebar</li>
-                                <li>04_Top_Candidates</li>
-                                <li>05_Top_Candidates_with_Sidebar</li>
-                                <li>06_Job_Details</li>
-                                <li>07_Employer_Profile</li>
-                                <li>08_Contact_us</li>
-                                <li>09_404_Page</li>
+						</div>
 
-                            </ul>
-                            
-                            <h3>SUPPORT:</h3>
-                            <ul>
-                                <li>If you need any help using the file or need special customizing please feel free to contact me via my Themeforest profile. If you have a moment, please rate this item, I’ll appreciate it very much!….Thank you.</li>
-                            </ul>
-                        </div>
-                        
-                    </div>
+						<div class="feature_and_file">
+							<h3>01 Template Features:</h3>
+							<ul>
+								<li>09 PSD Files with Layer Styles.</li>
+								<li>PSD Well Organized, with named layers and groups</li>
+								<li>Images are not included</li>
+								<li>Free Fonts used</li>
+								<li>FontAwesome Icon</li>
+								<li>Google font used (Arimo)</li>
+								<li>Fully Customizable</li>
+								<li>Pixel Perfect</li>
+								<li>Great Support</li>
+								<li>And many More....</li>
+							</ul>
 
-    <!--=========================
+							<h3> 02 PSD Files:</h3>
+							<ul>
+
+								<li>01_Home_Page</li>
+								<li>02_Recent_Jobs</li>
+								<li>03_Recent_Jobs_with_Sidebar</li>
+								<li>04_Top_Candidates</li>
+								<li>05_Top_Candidates_with_Sidebar</li>
+								<li>06_Job_Details</li>
+								<li>07_Employer_Profile</li>
+								<li>08_Contact_us</li>
+								<li>09_404_Page</li>
+
+							</ul>
+
+							<h3>SUPPORT:</h3>
+							<ul>
+								<li>If you need any help using the file or need special customizing please feel free to contact me via my Themeforest profile. If you have a moment, please rate this item, I’ll appreciate it very much!….Thank you.</li>
+							</ul>
+
+
+						</div>
+						<!--Comment and Review-->
+						<div class="comment_review">
+
+
+							<div class="row">
+								<div class="col-12">
+
+
+									<div class="list-group" id="list-tab" role="tablist">
+										<a class=" list-group-item-action active com_btn" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home"> Comments </a>
+
+										<a class=" list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Reviews</a>
+
+
+									</div>
+								</div>
+
+								<div class="col-12">
+									<div class="tab-content" id="nav-tabContent">
+
+										<div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+
+											<ul class="list-group comment_review_item">
+
+												<!-- Comment item-->
+												<li class="list-group-item">
+
+													<div class="rev_profile">
+														<img src="images//reviewImg1.jpg" alt="revewImg">
+													</div>
+													<div class="rev_text">
+														<div class="row">
+															<div class="col-8">
+																<h2 class="rev_name">Themesite</h2>
+															</div>
+
+															<div class="col-4 text-right"><span class="rev_time">2 days ago</span></div>
+														</div>
+														<p class="rev_comment">
+															Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiumod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+														</p>
+
+
+													</div>
+
+
+												</li>
+												<!-- Comment item-->
+
+												<li class="list-group-item">
+
+
+													<div class="rev_profile">
+														<img src="images//reviewImg2.jpg" alt="revewImg">
+													</div>
+													<div class="rev_text">
+														<div class="row">
+															<div class="col-8">
+																<h2 class="rev_name">Thempoo</h2>
+															</div>
+
+															<div class="col-4 text-right"><span class="rev_time">1 days ago</span></div>
+														</div>
+														<p class="rev_comment">
+															Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiumod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+														</p>
+
+
+													</div>
+
+
+
+												</li>
+												<!-- Comment item-->
+
+
+
+												<li class="list-group-item">
+
+
+													<div class="rev_profile">
+														<img src="images//reviewImg3.jpg" alt="revewImg">
+													</div>
+													<div class="rev_text">
+														<div class="row">
+															<div class="col-8">
+																<h2 class="rev_name">MW Themes</h2>
+															</div>
+
+															<div class="col-4 text-right"><span class="rev_time">1 Week ago</span></div>
+														</div>
+														<p class="rev_comment">
+															Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiumod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+														</p>
+
+
+													</div>
+
+
+
+												</li>
+
+
+											</ul>
+
+
+
+										</div>
+										<!--Review part start-->
+
+										<div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+
+
+											<ul class="list-group comment_review_item">
+
+												<!-- Comment item-->
+												<li class="list-group-item">
+
+													<div class="rev_profile">
+														<img src="images//reviewImg1.jpg" alt="revewImg">
+													</div>
+													<div class="rev_text">
+														<div class="row">
+															<div class="col-8">
+																<h2 class="rev_name">Themesite</h2>
+															</div>
+
+															<div class="col-4 text-right"><span class="rev_time">2 days ago</span></div>
+														</div>
+
+														<ul class="detail_page_rating comm_rev rev_rating">
+
+															<li>
+																<span>
+
+																	<i class="fas fa-star"></i>
+																	<i class="fas fa-star"></i>
+																	<i class="fas fa-star"></i>
+																	<i class="fas fa-star"></i>
+																	<i class="fas fa-star"></i>
+
+																</span>
+																<span>(For Design Quality)</span>
+															</li>
+														</ul>
+
+
+														<p class="rev_comment">
+															Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiumod tempor incididunt ut labore et dolore magna aliqua. 
+														</p>
+
+
+													</div>
+
+
+												</li>
+												<!-- Comment item-->
+
+												<li class="list-group-item">
+
+
+													<div class="rev_profile">
+														<img src="images//reviewImg2.jpg" alt="revewImg">
+													</div>
+													<div class="rev_text">
+														<div class="row">
+															<div class="col-8">
+																<h2 class="rev_name">Thempoo</h2>
+															</div>
+
+															<div class="col-4 text-right"><span class="rev_time">1 days ago</span></div>
+														</div>
+														<p class="rev_comment">
+															Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiumod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+														</p>
+
+
+													</div>
+
+
+
+												</li>
+												<!-- Comment item-->
+
+
+
+												<li class="list-group-item">
+
+
+													<div class="rev_profile">
+														<img src="images//reviewImg3.jpg" alt="revewImg">
+													</div>
+													<div class="rev_text">
+														<div class="row">
+															<div class="col-8">
+																<h2 class="rev_name">MW Themes</h2>
+															</div>
+
+															<div class="col-4 text-right"><span class="rev_time">1 Week ago</span></div>
+														</div>
+														<ul class="detail_page_rating comm_rev rev_rating">
+
+															<li>
+																<span>
+
+																	<i class="fas fa-star"></i>
+																	<i class="fas fa-star"></i>
+																	<i class="fas fa-star"></i>
+																	<i class="fas fa-star"></i>
+																	<i class="fas fa-star"></i>
+
+																</span>
+																<span>(For Design Quality)</span>
+															</li>
+														</ul>
+
+														<p class="rev_comment">
+															Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiumod tempor incididunt ut labore et dolore magna aliqua. 
+														</p>
+
+
+													</div>
+
+
+
+												</li>
+
+
+											</ul>
+
+
+
+
+										</div>
+
+
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+
+					</div>
+
+					<!--=========================
         detail part left end
     ==========================-->
-                
-                
 
-                </div>
-                <div class="col-lg-5">
-                    <ul class="detail_share_part">
-                        <li>
-                            Share :
-                        </li>
-                        <li>
-                            <a href="#"><i class="fab fb fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab twit fa-twitter"></i></a>
-                            <a href="#"><i class="fab google fa-google-plus-g"></i></a>
-                            <a href="#"><i class="fab pri fa-pinterest-p"></i></a>
-                            <a href="#"><i class="fab dribble fa-dribbble"></i></a>
-                        </li>
-                    </ul>
 
-                    <div class="product_info">
-                        <ul class="product_info_slider">
-                            <li class="itemOne">
-                                <h3>File Type</h3>
-                                <p>
-                                    <span>HTML</span>,
-                                    <span>CSS</span>
-                                </p>
-                            </li>
 
-                            <li>
-                                <h3>File Size</h3>
-                                <p>
-                                    8.9 MB
-                                </p>
-                            </li>
-                            <li>
-                                <h3>Layout</h3>
-                                <p>Responsive</p>
-                            </li>
-                            <li>
-                                <h3>Add</h3>
-                                <p>Information</p>
-                            </li>
+				</div>
+				<div class="col-lg-5">
+					<ul class="detail_share_part">
+						<li>
+							Share :
+						</li>
+						<li>
+							<a href="#"><i class="fab fb fa-facebook-f"></i></a>
+							<a href="#"><i class="fab twit fa-twitter"></i></a>
+							<a href="#"><i class="fab google fa-google-plus-g"></i></a>
+							<a href="#"><i class="fab pri fa-pinterest-p"></i></a>
+							<a href="#"><i class="fab dribble fa-dribbble"></i></a>
+						</li>
+					</ul>
 
-                        </ul>
-                    </div>
+					<div class="product_info">
+						<ul class="product_info_slider">
+							<li class="itemOne">
+								<h3>File Type</h3>
+								<p>
+									<span>HTML</span>,
+									<span>CSS</span>
+								</p>
+							</li>
 
-                    <div class="detail_product_detail_page">
-                        <!--Detail Profile-->
-                        <h3 class="profile_title">Teaclub - Tea Shop PSD Template</h3>
-                        <ul class="detail_part_profile">
-                            <li class="pp">
-                                <div class="detail_profile_image">
-                                    <img src="images/product_profile.png" alt="product_profile">
-                                </div>
-                            </li>
-                            <li>
-                                <ul class="creator_detail">
-                                    <li>
-                                        <span class="ct">Created by</span>
-                                        <span>:</span>
-                                        <span>Themepoo</span>
-                                    </li>
-                                    <li>
-                                        <span class="ct">Created</span>
-                                        <span>:</span>
-                                        <span>26 October 2017</span>
-                                    </li>
-                                    <li>
-                                        <span class="ct">Last Update</span>
-                                        <span>:</span>
-                                        <span>17 June 2018</span>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <!--Rating-->
-                        <ul class="detail_page_rating">
-                            <li>Ratings:</li>
-                            <li>
-                                <span>
+							<li>
+								<h3>File Size</h3>
+								<p>
+									8.9 MB
+								</p>
+							</li>
+							<li>
+								<h3>Layout</h3>
+								<p>Responsive</p>
+							</li>
+							<li>
+								<h3>Add</h3>
+								<p>Information</p>
+							</li>
 
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
+						</ul>
+					</div>
 
-                                </span>
-                                <span>(4.75 average based on 16 ratings)</span>
-                            </li>
-                        </ul>
-                        <!--Detail product Card-->
-                        <div class="detail_part_card">
-                            <form action="">
-                                <h3>Licenced Type:</h3>
-                                <ul class="select_price">
-                                    <li>
-                                        <input checked type="radio" name="price" id="regular">
-                                        <span class="rdo"></span>
-                                        <label for="regular">Regular Licence</label>
-                                        <span>$19</span>
-                                    </li>
-                                    <li>
-                                        <input type="radio" name="price" id="extend">
-                                        <span class="rdo"></span>
-                                        <label for="extend">Extended Licence</label>
-                                        <span>$500</span>
-                                    </li>
-                                </ul>
-                                <ul class="detail_part_card_btn">
-                                    <li>
-                                        <button type="submit">Add to Cart</button>
-                                    </li>
-                                    <li>
-                                        <button type="submit">Purchase Now</button>
-                                    </li>
-                                </ul>
+					<div class="detail_product_detail_page">
+						<!--Detail Profile-->
+						<h3 class="profile_title">Teaclub - Tea Shop PSD Template</h3>
+						<ul class="detail_part_profile">
+							<li class="pp">
+								<div class="detail_profile_image">
+									<img src="images/product_profile.png" alt="product_profile">
+								</div>
+							</li>
+							<li>
+								<ul class="creator_detail">
+									<li>
+										<span class="ct">Created by</span>
+										<span>:</span>
+										<span>Themepoo</span>
+									</li>
+									<li>
+										<span class="ct">Created</span>
+										<span>:</span>
+										<span>26 October 2017</span>
+									</li>
+									<li>
+										<span class="ct">Last Update</span>
+										<span>:</span>
+										<span>17 June 2018</span>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<!--Rating-->
+						<ul class="detail_page_rating">
+							<li>Ratings:</li>
+							<li>
+								<span>
 
-                            </form>
-                        </div>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
 
-                    </div>
+								</span>
+								<span>(4.75 average based on 16 ratings)</span>
+							</li>
+						</ul>
+						<!--Detail product Card-->
+						<div class="detail_part_card">
+							<form action="">
+								<h3>Licenced Type:</h3>
+								<ul class="select_price">
+									<li>
+										<input checked type="radio" name="price" id="regular">
+										<span class="rdo"></span>
+										<label for="regular">Regular Licence</label>
+										<span>$19</span>
+									</li>
+									<li>
+										<input type="radio" name="price" id="extend">
+										<span class="rdo"></span>
+										<label for="extend">Extended Licence</label>
+										<span>$500</span>
+									</li>
+								</ul>
+								<ul class="detail_part_card_btn">
+									<li>
+										<button type="submit">Add to Cart</button>
+									</li>
+									<li>
+										<button type="submit">Purchase Now</button>
+									</li>
+								</ul>
 
-                </div>
-            </div>
-        </div>
-    </div>
+							</form>
+						</div>
 
-    <!--=========================
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--=========================
         detail part end
     ==========================-->
 
 
 
-    <!--=========================
+	<!--=========================
         footer start
     ==========================-->
-    <section class="footer_part footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="footer_col_one">
-                        <div class="footer_logo">
-                            <img src="images/footer_logo.png" alt="footer_logo">
-                        </div>
-                        <ul>
-                            <li><a href="#">Terms &amp; Condition</a></li>
-                            <li><a href="#">Frequently Ask Questions</a></li>
-                            <li><a href="#">About Marketplace</a></li>
-                            <li><a href="#">Blogs</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="footer_col_two">
-                        <div class="footer_title">
-                            <h2>Help</h2>
-                        </div>
-                        <ul>
-                            <li><a href="#">Help Center</a></li>
-                            <li><a href="#">Live Support</a></li>
-                            <li><a href="#">Questions &amp; Answers</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="footer_col_three">
-                        <div class="footer_title">
-                            <h2>Contact</h2>
-                        </div>
-                        <ul>
-                            <li>
-                                <p>Momtaz Plaza (4th Floor)</p>
-                                <p>House#7, Road#4, Dhanmondi</p>
-                                <p>Dhaka-1205. Bangladesh</p>
-                            </li>
-                            <li>
-                                <p>marketplace@info.com</p>
-                                <p>help@marketplace.com</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="footer_col_four">
-                        <div class="footer_title">
-                            <h2>Connect with us</h2>
-                        </div>
-                        <ul>
-                            <li>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                            </li>
-                        </ul>
+	<section class="footer_part footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="footer_col_one">
+						<div class="footer_logo">
+							<img src="images/footer_logo.png" alt="footer_logo">
+						</div>
+						<ul>
+							<li><a href="#">Terms &amp; Condition</a></li>
+							<li><a href="#">Frequently Ask Questions</a></li>
+							<li><a href="#">About Marketplace</a></li>
+							<li><a href="#">Blogs</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="footer_col_two">
+						<div class="footer_title">
+							<h2>Help</h2>
+						</div>
+						<ul>
+							<li><a href="#">Help Center</a></li>
+							<li><a href="#">Live Support</a></li>
+							<li><a href="#">Questions &amp; Answers</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="footer_col_three">
+						<div class="footer_title">
+							<h2>Contact</h2>
+						</div>
+						<ul>
+							<li>
+								<p>Momtaz Plaza (4th Floor)</p>
+								<p>House#7, Road#4, Dhanmondi</p>
+								<p>Dhaka-1205. Bangladesh</p>
+							</li>
+							<li>
+								<p>marketplace@info.com</p>
+								<p>help@marketplace.com</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="footer_col_four">
+						<div class="footer_title">
+							<h2>Connect with us</h2>
+						</div>
+						<ul>
+							<li>
+								<a href="#"><i class="fab fa-facebook-f"></i></a>
+								<a href="#"><i class="fab fa-twitter"></i></a>
+								<a href="#"><i class="fab fa-linkedin-in"></i></a>
+								<a href="#"><i class="fab fa-pinterest-p"></i></a>
+							</li>
+						</ul>
 
-                        <div class="footer_title">
-                            <h2>Payment Methods</h2>
-                        </div>
-                        <ul>
-                            <li>
-                                <a href="#"><img src="images/paypal_icon.png" alt="footer_icon"></a>
+						<div class="footer_title">
+							<h2>Payment Methods</h2>
+						</div>
+						<ul>
+							<li>
+								<a href="#"><img src="images/paypal_icon.png" alt="footer_icon"></a>
 
-                                <a href="#"><img src="images/visa_icon.png" alt="footer_icon"></a>
+								<a href="#"><img src="images/visa_icon.png" alt="footer_icon"></a>
 
-                                <a href="#"><img src="images/disc_icon.png" alt="footer_icon"></a>
+								<a href="#"><img src="images/disc_icon.png" alt="footer_icon"></a>
 
-                                <a href="#"><img src="images/express_icon.png" alt="footer_icon"></a>
+								<a href="#"><img src="images/express_icon.png" alt="footer_icon"></a>
 
-                                <a href="#"><img src="images/card_icon.png" alt="footer_icon"></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <div class="container text-center">
-                <p>Copyright &copy; 2019. All rights reserved by CREATIVE IT INSTITUTE</p>
-            </div>
-        </div>
-    </section>
-    <!--=========================
+								<a href="#"><img src="images/card_icon.png" alt="footer_icon"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="container text-center">
+				<p>Copyright &copy; 2019. All rights reserved by CREATIVE IT INSTITUTE</p>
+			</div>
+		</div>
+	</section>
+	<!--=========================
         footer end
     ==========================-->
 
-    <script src="https://kit.fontawesome.com/5dae415ef9.js" crossorigin="anonymous"></script>
-    <script src="js/jquery-1.12.4.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/script.js"></script>
+	<script src="https://kit.fontawesome.com/5dae415ef9.js" crossorigin="anonymous"></script>
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 
 </html>

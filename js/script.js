@@ -2,12 +2,11 @@
 //fixed menu start
 (function(){
     
-    
     var menu = $(".menu");
-	
-	
-    
+
     $(document).scroll(function(){
+		
+		var screen = $(window).height();
         
         var scroll = $(document).scrollTop();
         
@@ -18,34 +17,39 @@
             menu.removeClass("fixedMenu");
         }
 		
+		
+		
+		
 	 //fixing product detail page
 		
 		var product_card = $(".detail_product_detail_page");
-		
-		 if(scroll > 400){
-            
-            product_card.addClass("fixed_card");
-        }else{
-            product_card.removeClass("fixed_card");
-        }
-		
-		
-		var doc = $(document).height();
 		var screen = $(window).height();
-		
+		var doc = $(document).height();
 		var footer = $(".footer").height();
-		
 		var main = doc - footer;
-	
-		console.log(main);
+
 		
-		if((scroll + screen) > main){
-			
-			product_card.removeClass("fixed_card");
-			
+		 if(scroll > screen / 2.3){
+            
+         product_card.addClass("fixed_card");
+			 
+		
+	     	if((scroll + screen) > main){
+				
+			 product_card.removeClass("fixed_card");
+			 product_card.addClass("footer_appear");
+				 
+		   }else{
+			   
+			product_card.removeClass("footer_appear");
+			product_card.addClass("fixed_card")
+		   }
+	    
+			 
+        }else{
+			product_card.removeClass("fixed_card")
 		}
-		
-        
+		  
         
     });
     
