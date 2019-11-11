@@ -31,6 +31,11 @@
     9. bread part css
     10. detail part css
     11. detail part left
+
+--------------------------------
+   All item grid Page
+
+    12. product grid view
 --------------------------------
 
 
@@ -1078,6 +1083,12 @@ input:focus{
 .rev_rating {
     padding-bottom: 8px;
 }
+
+
+
+/*=============================
+       detail part left
+===============================*/
 
 
 
