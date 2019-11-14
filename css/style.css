@@ -25,17 +25,32 @@
     7. freebie part css
     8. footer part css
 
+
+
 --------------------------------
     Product Detail Page
-
+-------------------------------
     9. bread part css
     10. detail part css
     11. detail part left
 
+
+
 --------------------------------
    All item grid Page
-
+-------------------------------
     12. product grid view
+
+
+
+--------------------------------
+   All item list Page
+-------------------------------
+    13. product list view
+
+
+
+
 --------------------------------
 
 
@@ -652,7 +667,7 @@ input:focus{
 }
 
 .slick-slider{
-    padding: 0 20px;
+    padding: 0 0;
 }
 
 /*--Detail Profile--*/
@@ -678,6 +693,8 @@ input:focus{
     background: #fff;
     box-shadow: 0px 5px 20px rgba(33, 57, 64, 0.1);
     margin-top: 20px;
+	position: sticky;
+	top: 80px;
 }
 
 .profile_title{
@@ -861,48 +878,13 @@ input:focus{
 }
 
 
+/*
 .fixed_card{
-	position: fixed;
-	bottom: 50%;
+	position: sticky;
 	background: #fff;
-	transform: translateY(50%);
-	z-index: 999;
-	
-	animation: card_ani 1s;
+	top: 80px;
 }
-
-.footer_appear{
-	position: fixed;
-	bottom: 373px;
-	background: #fff;
-	z-index: 999;
-
-	animation: card_ani_footer 1s;
-}
-
-@keyframes card_ani{
-	0%{
-		transform: translateY(0);
-	}
-	
-	100%{
-		transform: translateY(50%);
-	}
-}
-
-
-@keyframes card_ani_footer{
-	0%{
-		transform: translateY(50%);
-		bottom : 50%;
-		
-	}
-	
-	100%{
-		transform: translateY(0);
-		bottom: 373px;
-	}
-}
+*/
 
 
 /*=============================
@@ -1033,9 +1015,7 @@ input:focus{
 	background: transparent;
 }
 
-.comment_review .tab-content{
-	padding: 0 0 30px 0;
-}
+
 
 .comment_review .list-group-item{
 	padding: 25px;
@@ -1087,7 +1067,7 @@ input:focus{
 
 
 /*=============================
-       detail part left
+       product grid view
 ===============================*/
 .product_grid{
 	padding: 70px 0 30px 0;
@@ -1175,4 +1155,96 @@ input:focus{
 	line-height: 50px;
 	border-radius: 50%;
 	
+}
+
+
+/*=============================
+       product list view
+===============================*/
+.list_view a:nth-child(1){
+	border-color: transparent;
+}
+.list_view a:nth-child(2){
+	border-color: #fff;
+}
+
+.product_list{
+	padding: 70px 0 0 0;
+}
+
+.sideOption{
+	box-shadow: 0 5px 20px rgba(0,0,0,.1);
+	padding: 30px;
+}
+
+.sideOption h3{
+	font-family: 'Arimo',sans-serif;
+	color: var(--44-col);
+	font-size: 20px;
+	font-weight: 600;
+	padding-bottom: 20px;
+}
+
+.sideOption ul{
+	padding-bottom: 30px;
+}
+
+.sideOption ul li{
+	padding-left: 20px;
+}
+
+.sideOption ul li input{
+	display: none;
+}
+
+.sideOption ul li span{
+	position: relative;
+	border: 1px solid #444;	
+	top: 3px;
+    left: -19px;
+	width: 16px;
+	height: 16px;
+	border-radius: 3px;
+	
+}
+
+
+
+.sideOption ul li span::after{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 3px;
+	content: '';
+	border: 1px solid transparent;	
+    top: 0;
+    left: 0;
+}
+
+
+.sideOption label{
+	font-family: 'Arimo',sans-serif;
+	color: #777;
+	font-size: 16px;
+	margin-left: -12px;
+	cursor: pointer;
+}
+
+.sideOption ul li input:checked ~ span{
+	background: var(--brand-col);
+	border-color: var(--brand-col);
+}
+.range_option{
+	position: relative;
+	padding: 50px 0;
+}
+
+.range_option::after{
+	height: 1px;
+	position: absolute;
+	background: #eee;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
 }
