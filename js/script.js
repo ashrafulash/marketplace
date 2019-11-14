@@ -1,3 +1,17 @@
+(function(){
+  //button handlers
+		$(".cate_btn").click(function(){
+		
+		$(".cate_list").slideToggle();
+		
+		
+	})
+
+  
+	
+	
+})();
+
 
 //fixed menu start
 (function(){
@@ -61,10 +75,10 @@
     // instead of a settings object
   ]
 });
-    
-    
-    
-
-    
-    
+      
 })();
+
+
+
+
+
