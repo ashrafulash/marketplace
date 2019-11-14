@@ -5,6 +5,7 @@
     --brand-col: #6652cb;
     
     --lin-bg: linear-gradient(to right, #6a56cd, #a293f0);
+	--lin-ho: linear-gradient(to right, #a293f0, #6a56cd);
 }
 
 /*import font from google fonts*/
@@ -46,7 +47,8 @@
 --------------------------------
    All item list Page
 -------------------------------
-    13. product list view
+    13. product list view sidebar
+	14. product list view item
 
 
 
@@ -144,6 +146,10 @@ input:focus{
     color: #fff;
     padding: 18px 20px;
     border-radius: 5px;
+}
+
+.genBtn a:hover{
+	 background: var(--lin-ho);
 }
 
 
@@ -1159,7 +1165,7 @@ input:focus{
 
 
 /*=============================
-       product list view
+   product list view sidebar
 ===============================*/
 .list_view a:nth-child(1){
 	border-color: transparent;
@@ -1191,6 +1197,7 @@ input:focus{
 
 .sideOption ul li{
 	padding-left: 20px;
+	line-height: 26px;
 }
 
 .sideOption ul li input{
@@ -1230,10 +1237,33 @@ input:focus{
 	cursor: pointer;
 }
 
+.sideOption ul li span{
+	position: relative;
+}
+
 .sideOption ul li input:checked ~ span{
 	background: var(--brand-col);
 	border-color: var(--brand-col);
 }
+
+.sideOption ul li input:checked ~ span::after{
+	opacity: 1;
+}
+
+.sideOption ul li span::after{
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 10px;
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    transform: rotate(45deg);
+    left: 4px;
+    top: 1px;
+	opacity: 0;
+	
+}
+
 .range_option{
 	position: relative;
 	padding: 50px 0;
@@ -1247,4 +1277,160 @@ input:focus{
 	top: 0;
 	left: 0;
 	width: 100%;
+}
+
+
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br{
+	border-radius: 10px;
+}
+
+.ui-widget{
+	font-size: 12px;
+	background: #dddddd;
+	border: 0;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+	border: 1px solid #d3d3d3;
+    background: #e6e6e6 url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;
+    font-weight: normal;
+    color: #555555;
+    width: 22px;
+    height: 22px;
+    top: -6px;
+    background: #fff;
+    border: 0;
+    border-radius: 36px;
+	cursor: pointer;
+	
+	box-shadow: inset 0 0 0px 5px #6c58ce;
+}
+
+.ui-slider-horizontal .ui-slider-range{
+	background: var(--lin-bg);
+}
+
+.range_option .value{
+	color: #999;
+	font-family: 'Arimo',sans-serif;
+}
+
+
+.rating_option{
+	padding-top: 30px;
+	position: relative;
+}
+
+.rating_option::after{
+	height: 1px;
+	position: absolute;
+	background: #eee;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+
+/*=============================
+  product list view item
+===============================*/
+
+.list_container .card{
+	border: 0;
+	padding: 16px;
+	background: #fff;
+	box-shadow: 0 5px 20px rgba(0,0,0,.1);
+}
+
+.list_container .card-title{
+	font-size: 20px;
+	font-family: 'Arial',sans-serif;
+	margin: 0;
+}
+
+.list_container .list_star{
+	color: #ffb504;
+	padding: 5px 0;
+}
+
+.list_container .card-text{
+	font-size: 16px;
+	font-family: 'Arimo',sans-serif;
+}
+
+.list_container .text-muted{
+	font-size: 14px;
+}
+
+.list_container .price_card{
+	padding-top: 10px;
+}
+
+.list_container .price_card span:nth-child(1){
+	font-size: 36px;
+	color: var(--44-col);
+	font-family: 'Arimo',sans-serif;
+	font-weight: 600;
+	vertical-align: middle;
+}
+
+.list_container .price_card span:nth-child(2) a{
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	background: #fff;
+	color: #999;
+	border: 1px solid #999;
+	border-radius: 50%;
+	vertical-align: middle;
+	margin-left: 15px;
+}
+
+.list_container .price_card span:nth-child(2) a:hover{
+	background: var(--lin-bg);
+	color: #fff;
+	
+	
+}
+
+.list_container .position-relative{
+	overflow: hidden;
+}
+
+.list_container .position-relative a{
+	position: absolute;
+	background: rgba(0,0,0,.8);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	
+	transform: scale(1.1);
+	opacity: 0;
+	transition: .2s;
+	
+}
+
+
+.list_container .position-relative a .preview_text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 129px;
+    color: #fff;
+    font-family: 'Arimo',sans-serif;
+}
+
+
+.list_container .position-relative:hover a{
+	transform:scale(1);
+	opacity: 1;
+}
+
+.list_container .position-relative img{
+	height: 100%;
 }
