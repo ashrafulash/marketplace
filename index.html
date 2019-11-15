@@ -30,7 +30,7 @@
 					<ul class="header_top_list text-lg-right">
 						<li><a href="#">How it Works</a></li>
 						<li><a href="#">My Cart</a></li>
-						<li><a href="#">Login / Signup</a></li>
+						<li><a class="login_btn" href="#">Login / Signup</a></li>
 					</ul>
 				</div>
 			</div>
@@ -52,7 +52,7 @@
 						<span>Categories</span>
 						<span><i class="fas fa-angle-down"></i></span>
 					</button>
-					
+
 					<div class="cate_list position-absolute align-bottom">
 						<ul>
 							<li><a href="#">Website</a></li>
@@ -63,7 +63,7 @@
 							<li><a href="#">Photos</a></li>
 						</ul>
 					</div>
-					
+
 				</div>
 				<div class="col-lg-8 ord-m-2">
 					<div class=" navbar-expand-lg">
@@ -105,12 +105,22 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-2 text-lg-right ord-m-1 col">
+				<div class="col-lg-2 text-lg-right ord-m-1 col position-relative">
 
 					<button class="newItem_btn">
 						<span>Newest Item</span>
 						<span><i class="fas fa-angle-down"></i></span>
 					</button>
+
+
+					<div class="newest_list position-absolute align-bottom">
+						<ul>
+							<li><a href="#">Best matches</a></li>
+							<li><a href="#">Best Seller</a></li>
+							<li><a href="#">Teamselling</a></li>
+							<li><a href="#">Best Rated</a></li>
+						</ul>
+					</div>
 
 				</div>
 			</div>
@@ -203,17 +213,17 @@
 
 
 				</div>
-									<div class="col-lg-4 mt-4">
-						<div class="product_box">
-							<img src="images/newestItem5.png" alt="newestItem1" class="w-100">
-							<a href="product_detail.html" class="overlay">
-								<span>$60</span>
-								<span>Tea Club - Tea Shop PSD Template</span>
-								<span>by: Themepoo</span>
-								<span>HTML Template / E-comerce</span>
-							</a>
-						</div>
+				<div class="col-lg-4 mt-4">
+					<div class="product_box">
+						<img src="images/newestItem5.png" alt="newestItem1" class="w-100">
+						<a href="product_detail.html" class="overlay">
+							<span>$60</span>
+							<span>Tea Club - Tea Shop PSD Template</span>
+							<span>by: Themepoo</span>
+							<span>HTML Template / E-comerce</span>
+						</a>
 					</div>
+				</div>
 				<div class="col-lg-4 mt-4">
 					<div class="product_box">
 						<img src="images/newestItem3.png" alt="newestItem1" class="w-100">
@@ -228,18 +238,18 @@
 
 
 				</div>
-				
-									<div class="col-lg-4 mt-4">
-						<div class="product_box">
-							<img src="images/newestItem6.png" alt="newestItem1" class="w-100">
-							<a href="product_detail.html" class="overlay">
-								<span>$60</span>
-								<span>Tea Club - Tea Shop PSD Template</span>
-								<span>by: Themepoo</span>
-								<span>HTML Template / E-comerce</span>
-							</a>
-						</div>
+
+				<div class="col-lg-4 mt-4">
+					<div class="product_box">
+						<img src="images/newestItem6.png" alt="newestItem1" class="w-100">
+						<a href="product_detail.html" class="overlay">
+							<span>$60</span>
+							<span>Tea Club - Tea Shop PSD Template</span>
+							<span>by: Themepoo</span>
+							<span>HTML Template / E-comerce</span>
+						</a>
 					</div>
+				</div>
 
 
 			</div>
@@ -407,6 +417,96 @@
 	<!--=========================
         footer end
     ==========================-->
+	<!--=========================
+          popup part start
+    ==========================-->
+	<section class="popup">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-7">
+
+					<!-- login/ signup start-->
+					<div class="login_form">
+						<span class="login_close_btn">x</span>
+
+						<div class="login_page_logo">
+							<img src="images/logo.png" alt="logo">
+						</div>
+
+						
+						
+								<div class="list-group" id="list-tab" role="tablist">
+									<a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Log in</a>
+									
+									<a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Sign Up</a>
+									
+								</div>
+						
+				
+								<div class="tab-content" id="nav-tabContent">
+								
+									<div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+										
+										<form>
+											
+											<ul>
+												<li><p>User name / Email address</p></li>
+												
+												<li>
+													<input type="text" placeholder="Email Address">
+												</li>
+												
+												<li><p>Password</p></li>
+												<li>
+													
+													<input type="password" placeholder="Password">
+												</li>
+												
+												<li class="remFor">
+													<input id="remember" type="checkbox">
+													<span></span>
+													<label for="remember"> Remember me </label>
+													
+													<a href="#">Fogot Password?</a>
+													
+												</li>
+												
+												<li>
+													<button type="submit">Log in</button>
+												</li>
+											</ul>
+											
+										</form>
+										
+										
+									</div>
+									
+									
+									<div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+										
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam praesentium modi deleniti, velit rem? Perspiciatis sapiente quos eum ipsum impedit aperiam inventore similique sunt et quia unde dolores, placeat vitae reprehenderit doloremque, mollitia iusto eos sed modi, quam deserunt facere.
+										
+									</div>
+									
+									
+								</div>
+
+						</div>
+
+					</div>
+
+
+
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+	<!--=========================
+          popup part end
+    ==========================-->
+
 
 	<script src="https://kit.fontawesome.com/5dae415ef9.js" crossorigin="anonymous"></script>
 	<script src="js/jquery-1.12.4.min.js"></script>

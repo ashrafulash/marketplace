@@ -1,14 +1,61 @@
+$(document).ready(function(){
+	
 (function(){
   //button handlers
-		$(".cate_btn").click(function(){
+	$(".cate_btn").click(function(){
 		
 		$(".cate_list").slideToggle();
 		
+	});
+	
+	$(".newItem_btn").click(function(){
+		
+		$(".newest_list").slideToggle();		
+		
+	});	
+	
+	//popup
+	
+	function popup(act){
+		if(act == true){
+			$(".popup").css({
+				'display': 'block',
+			})
+			
+			$("body").css({
+				'overflow':'hidden',
+			})
+		}
+		else if(act == false){
+			$(".popup").css({
+				'display': 'none',
+			})
+			
+			$("body").css({
+				'overflow':'unset',
+			})
+		}
+	}
+	
+	//login/signup button
+
+	$(".login_btn").click(function(){
+		popup(true);
+		
+		$(".login_form").css({
+			'display':'block',
+		})
 		
 	})
-
-  
 	
+	$(".login_close_btn").click(function(){	
+		popup(false);
+		
+		$(".login_form").css({
+			'display':'none',
+		})
+	})
+
 	
 })();
 
@@ -80,5 +127,8 @@
 
 
 
+	
+	
+})
 
 
