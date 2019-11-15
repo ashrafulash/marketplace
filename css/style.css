@@ -102,6 +102,14 @@ span{
     border: 0;
 }
 
+
+label{
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-o-user-select:none;
+}
+
 button,
 button:focus,
 input:focus{
@@ -1582,24 +1590,24 @@ input:focus{
 	color: #fff;
 }
 
-.login_form .tab-content{
+.login_form .login{
 	margin-top: 40px;
 	text-align: center;
 	padding: 0 50px;
 }
 
-.login_form .tab-content ul li label[for="remember"]{
+.login_form .login ul li label[for="remember"]{
 	cursor: pointer;
 }
 
-.login_form .tab-content ul li p{
+.login_form .login ul li p{
 	color: var(--brand-col);
 	font-family: 'Arimo',sans-serif;
 	font-size: 16px;
 	font-weight: 600;
 }
 
-.login_form .tab-content ul li:not(:nth-child(5)) input{
+.login_form .login ul li:not(:nth-child(5)) input{
 	width: 80%;
 	padding: 8px 10px;
 	margin-bottom: 15px;
@@ -1611,16 +1619,16 @@ input:focus{
 	font-weight: 600;
 }
 
-.login_form .tab-content ul li:not(:nth-child(5)) input::placeholder{
+.login_form .login ul li:not(:nth-child(5)) input::placeholder{
 	opacity: 1;
 	color: #999;
 }
 
-.login_form .tab-content ul li:not(:nth-child(5)) input:focus{
+.login_form .login ul li:not(:nth-child(5)) input:focus{
 		border-bottom: 1px solid #d0d0d0 !important;
 }
 
-.login_form .tab-content ul li button{
+.login_form .login ul li button{
 	padding: 15px 100px;
 	background: var(--lin-bg);
 	color: #fff;
@@ -1631,31 +1639,31 @@ input:focus{
 }
 
 
-.login_form .tab-content ul li button:hover{
+.login_form .login ul li button:hover{
 	background: var(--lin-ho);
 }
 
-.login_form .tab-content .remFor{
+.login_form .login .remFor{
 	color: #999;
 	padding-top: 15px;
 	
 }
 
-.login_form .tab-content .remFor a{
+.login_form .login .remFor a{
 	color: #999;
 	margin-left: 5px;
 	
 }
 
-.login_form .tab-content .remFor a:hover{
+.login_form .login .remFor a:hover{
 	color: var(--brand-col);
 }
 
-.login_form .tab-content .remFor input{
+.login_form .login .remFor input{
 	display: none;
 }
 
-.login_form .tab-content .remFor span{
+.login_form .login .remFor span{
 	width: 16px;
 	height: 16px;
 	border-radius: 3px;
@@ -1667,21 +1675,21 @@ input:focus{
 
 
 
-.login_form .tab-content .remFor input:checked ~span{
+.login_form .login .remFor input:checked ~span{
 	background: var(--brand-col);
 	
 }
 
-.login_form .tab-content .remFor input:checked ~ label{
+.login_form .login .remFor input:checked ~ label{
 	color: var(--brand-col);
 }
 
-.login_form .tab-content .remFor label{
+.login_form .login .remFor label{
 	padding-left: 30px;
 	transform: translateX(-30px);
 }
 
-.login_form .tab-content .remFor span::after{
+.login_form .login .remFor span::after{
     width: 6px;
     height: 9px;
     border-right: 2px solid #fff;
@@ -1695,6 +1703,6 @@ input:focus{
 	
 }
 
-.login_form .tab-content .remFor input:checked ~span::after{
+.login_form .login .remFor input:checked ~span::after{
 	opacity: 1;
 }
