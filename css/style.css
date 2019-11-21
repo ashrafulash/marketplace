@@ -50,10 +50,16 @@
     13. product list view sidebar
 	14. product list view item
 
-
+--------------------------------
+   admin grid page
+-------------------------------
+    15. dashboard grid css
 
 
 --------------------------------
+    freeItems page
+--------------------------------
+    ** .free Item page css
 
 
 ==============================*/
@@ -108,6 +114,10 @@ label{
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-o-user-select:none;
+}
+
+.clr{
+	clear: both;
 }
 
 button,
@@ -333,6 +343,19 @@ input:focus{
 .newItem_btn:hover{
     background: #6652cb !important;
     color: #fff !important;
+}
+
+.newItem_btn:focus{
+	  align-items: center;
+    height: 100%;
+    text-transform: capitalize;
+     font-family: 'Arimo',sans-serif;
+    font-weight: 400;
+    color: var(--brand-col);
+    font-size: 16px;
+    background: #fff;
+    padding: 0 18px;
+    box-shadow: 3px 5px 10px rgba(0,0,0,.05) !important;
 }
 
 .newItem_btn span:nth-child(2){
@@ -1168,6 +1191,8 @@ input:focus{
 	border-color: transparent;
 }
 
+
+
 .all_item_pagi{
 	padding-top: 50px;
 }
@@ -1510,6 +1535,299 @@ input:focus{
 
 .list_container .position-relative img{
 	height: 100%;
+}
+
+/*=============================
+  dashboard grid css
+===============================*/
+.dashboard_grid{
+	padding-top: 70px;
+}
+
+
+.dashboard_sidebar{
+	background: #fff;
+	box-shadow: 0 5px 15px rgba(0,0,0,.1);
+}
+
+.dashboard_sidebar li a{
+	padding: 16px 30px;
+	font-family: 'Arimo',sans-serif;
+	font-size: 16px;
+	color: var(--44-col);
+	display: block;
+}
+
+.dashboard_sidebar li:not(:last-child) a{
+	border-bottom: 1px solid #f5f5f5;
+}
+
+.dashboard_sidebar li.active a{
+	background: var(--lin-bg);
+	color: #fff;
+}
+
+.dashboard_sidebar li:not(.active) a:hover{
+	color: var(--brand-col);
+}
+
+.dash_mini{
+	background: #fff;
+	box-shadow: 0 5px 15px rgba(0,0,0,.1);
+}
+
+.dash_mini_title{
+	padding: 18px 20px;
+	background: var(--lin-bg);
+	color: #fff;
+	font-family: 'Arimo',sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+
+.dash_content{
+	padding: 20px;
+}
+
+.dash_content_right h2{
+	font-size: 20px;
+	color: var(--44-col);
+	font-family: 'Arimo',sans-serif;
+	padding-bottom: 15px;
+}
+
+.v-center{
+	display: flex;
+	align-items: center;
+}
+
+.dash_content_right span{
+	color: #999;
+	font-size: 16px;
+}
+
+.dash_content_right p{
+	font-size: 16px;
+	color: #777;
+	font-family: 'Arimo',sans-serif;
+	padding-top: 5px;
+}
+
+.dash_content_right a{
+	padding: 10px 30px;
+	border-radius: 5px;
+	background: var(--lin-bg);
+	font-size: 18px;
+	font-family: 'Arimo',sans-serif;
+	color: #fff;
+	margin-top: 20px;
+}
+
+.dash_content_right a:hover{
+	background: var(--lin-ho);
+}
+
+
+.dash_content_right .download{
+	background: #fff;
+	border: 1px solid #ddd;
+	color: #797979;
+}
+
+.dash_content_right .download:hover{
+	border: 1px solid #fff;
+	background: var(--lin-bg);
+	color: #fff;
+}
+
+
+.unread_content .row-contnet{
+	border: 1px solid #dddddd;
+	padding: 20px;
+	
+}
+
+.unread_left{
+	width: 16%;
+}
+
+.unread_right{
+	padding-left: 15px;
+	width: 84%;
+}
+
+.unread_content_right{
+	position: relative;
+}
+
+
+.unread_content_right h2{
+	font-size: 20px;
+	font-family: 'Arimo',sans-serif;
+	color: #222;	
+}
+
+.unread_content_right p{
+	font-size: 16px;
+	font-family: 'Arimo',sans-serif;
+	color: #666;
+	padding-top: 10px;
+}
+
+.unread_content .row-contnet{
+	flex-direction: row;
+	display: flex;
+}
+
+.unread_time{
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 0 !important;
+	color: #999 !important;
+}
+
+.unread_content_right span{
+	color: #999;
+	font-size: 16px;
+	font-family: 'Arimo',sans-serif;
+	margin-top: 10px;
+	padding-right: 13px;
+	user-select: none;
+}
+
+
+.unread_content_right span a{
+	color: #999;
+	margin-left: 13px;
+}
+
+.unread_content_right span a:hover{
+	color: var(--brand-col);
+}
+
+
+
+.unread_replay{
+	position: relative;
+	color: var(--brand-col) !important;
+	cursor: pointer;
+}
+
+
+.unread_replay:after{
+	position: absolute;
+	content: '';
+	right: 0;
+	top: 15%;
+	width: 2px;
+	height: 85%;
+	background: #999;
+}
+
+
+.replay_box{
+	margin-top: -1px;
+	
+}
+
+#replay-box-1{
+	display: none;
+}
+
+
+
+.replay_box textarea{
+	width: 100%;
+	padding: 15px;
+	border: 1px solid #ddd;
+}
+.replay_box button{
+	background: var(--lin-bg);
+	float: right;
+	padding: 12px 40px;
+	font-family: 'Arimo',sans-serif;
+	font-size: 18px;
+	color: #fff;
+	margin-top: 5px;
+	border-radius: 5px;
+	user-select: none;
+}
+
+.replay_box button:hover {
+	background: var(--lin-ho);
+}
+
+.targetElement[data-show="false"]{
+	display: none;
+}
+
+.targetElement[data-show="true"]{
+	display: block;
+}
+
+
+.unread_mini{
+	padding-bottom: 50px;
+}
+
+.earning_content p{
+	font-family: 'Arimo',sans-serif;
+	font-size: 16px;
+	color: #666;
+	padding-bottom: 10px;
+}
+
+
+
+.dash_mini_img{
+    position: relative;
+    overflow: hidden;
+	cursor: pointer;
+}
+
+.dash_mini_img .overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.8);
+    transition: all linear .3s;
+    -wekbit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transform: scale(1.1);
+    box-sizing: border-box;
+    padding: 20px;
+    color: #fff;
+    opacity: 0;
+}
+
+.dash_mini_img:hover .overlay{
+      transform: scale(1);
+      opacity: 1;
+    
+}
+
+
+.approved_item_part .dash_content:not(:last-child){
+	border-bottom: 1px solid #ddd;
+}
+
+
+/*=============================
+ free Item page css
+===============================*/
+
+
+.free_list a:nth-child(1){
+	border-color: transparent;
+}
+
+.free_list a:nth-child(2){
+		border: 1px solid #fff;
 }
 
 

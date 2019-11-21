@@ -1,5 +1,35 @@
 $(document).ready(function(){
 	
+	
+//javascript code for repay comment box
+(function(){
+	
+	var btnList = document.querySelectorAll("#replay-btn");
+	
+	var ls = Array.from(btnList);
+	
+	ls.forEach(function(el){
+		el.addEventListener("click", function(e){
+			var dataTarget = el.dataset.target;
+			
+			const targetDOM = document.querySelector(dataTarget);
+			
+			var show = targetDOM.dataset.show;
+			
+			if(show === 'false'){
+				targetDOM.setAttribute("data-show", "true");
+			}
+			else if(show === 'true'){
+				targetDOM.setAttribute("data-show", "false");
+				
+			}
+		
+		})
+	})
+	
+})();
+
+	
 (function(){
   //button handlers
 	$(".cate_btn").click(function(){

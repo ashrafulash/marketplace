@@ -52,8 +52,8 @@
 						<span>Categories</span>
 						<span><i class="fas fa-angle-down"></i></span>
 					</button>
-					
-										<div class="cate_list position-absolute align-bottom">
+
+					<div class="cate_list position-absolute align-bottom">
 						<ul>
 							<li><a href="#">Website</a></li>
 							<li><a href="#">Graphics Item</a></li>
@@ -110,9 +110,9 @@
 						<span>Newest Item</span>
 						<span><i class="fas fa-angle-down"></i></span>
 					</button>
-					
-										
-				   <div class="newest_list position-absolute align-bottom">
+
+
+					<div class="newest_list position-absolute align-bottom">
 						<ul>
 							<li><a href="#">Best matches</a></li>
 							<li><a href="#">Best Seller</a></li>
@@ -143,8 +143,8 @@
 						<ol class="breadcrumb">
 							<li>
 								<div class="product_view_btn">
-									<a href="all_item_grid.html"><i class="fas fa-th"></i></a>
-									<a href="all_item_list.html"><i class="fas fa-th-list"></i></a>
+									<a href="admin_grid.html"><i class="fas fa-th"></i></a>
+									<a href="freeItems_page.html"><i class="fas fa-th-list"></i></a>
 								</div>
 							</li>
 							<li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -173,166 +173,241 @@
     ==========================-->
 
 	<!--=========================
-        product grid list start
-    ==========================-->
-	<section class="product_grid">
+		dashboard grid start
+	==========================-->
+	<section class="dashboard_grid">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4 col-md-6">
-					<div class="product_box">
-						<img src="images/newestItem1.png" alt="newestItem1" class="w-100">
-						<a href="product_detail.html" class="overlay">
-							<span>$60</span>
-							<span>Tea Club - Tea Shop PSD Template</span>
-							<span>by: Themepoo</span>
-							<span>HTML Template / E-comerce</span>
-						</a>
-					</div>
+				<div class="col-lg-3">
+					<!--sidebar start-->
+					<ul class="dashboard_sidebar">
+						<li class="active"><a href="admin_grid.html">Dashboard</a></li>
+						<li><a href="#">Profile</a></li>
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">Follower</a></li>
+						<li><a href="#">Following</a></li>
+						<li><a href="#">Settings</a></li>
+						<li><a href="#">Hidden Items</a></li>
+						<li><a href="#">Downloads</a></li>
+						<li><a href="#">Reviews</a></li>
+						<li><a href="#">Payouts</a></li>
+						<li><a href="#">Earnings</a></li>
+					</ul>
+					<!--sidebar start-->
 				</div>
 
-				<div class="col-lg-4 col-md-6">
-					<div class="product_box">
-						<img src="images/newestItem2.png" alt="newestItem1" class="w-100">
-						<a href="product_detail.html" class="overlay">
-							<span>$60</span>
-							<span>Tea Club - Tea Shop PSD Template</span>
-							<span>by: Themepoo</span>
-							<span>HTML Template / E-comerce</span>
-						</a>
-					</div>
-				</div>
 
-				<div class="col-lg-4 col-md-6">
-					<div class="product_box">
-						<img src="images/newestItem3.png" alt="newestItem1" class="w-100">
-						<a href="product_detail.html" class="overlay">
-							<span>$60</span>
-							<span>Tea Club - Tea Shop PSD Template</span>
-							<span>by: Themepoo</span>
-							<span>HTML Template / E-comerce</span>
-						</a>
-					</div>
-				</div>
+				<div class="col-lg-9">
+					<!--Currently processing updates-->
+					<div class="dash_mini">
+						<h2 class="dash_mini_title">Currently Processing Uploads</h2>
+						<div class="dash_content">
+							<div class="row">
+								<div class="col-lg-4">
+									<img src="images/upload_img.png" alt="upload_img" class="w-100">
 
-				<div class="col-lg-4 col-md-6 mt-4">
-					<div class="product_box">
-						<img src="images/newestItem4.png" alt="newestItem1" class="w-100">
-						<a href="product_detail.html" class="overlay">
-							<span>$60</span>
-							<span>Tea Club - Tea Shop PSD Template</span>
-							<span>by: Themepoo</span>
-							<span>HTML Template / E-comerce</span>
-						</a>
+								</div>
+								<div class="col-lg-8 v-center">
+									<div class="dash_content_right">
+										<h2>Tea Club - Tea Shop PSD Template <span>(New)</span></h2>
+
+										<p>Queued for Review</p>
+										<p>Submitted 1 Minute ago</p>
+
+										<a href="#">Delete</a>
+
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 mt-4">
-					<div class="product_box">
-						<img src="images/newestItem5.png" alt="newestItem1" class="w-100">
-						<a href="product_detail.html" class="overlay">
-							<span>$60</span>
-							<span>Tea Club - Tea Shop PSD Template</span>
-							<span>by: Themepoo</span>
-							<span>HTML Template / E-comerce</span>
-						</a>
+
+					<!--Unread Comments-->
+					<div class="dash_mini mt-4 unread_mini">
+						<h2 class="dash_mini_title">Unread Comments</h2>
+
+						<div class="dash_content unread_content">
+
+
+							<div class="row-contnet">
+								<div class="unread_left ">
+									<img src="images/unread_img.png" alt="upload_img" class="w-100">
+
+								</div>
+
+								<div class="unread_right">
+									<div class="unread_content_right">
+										<h2>MW Themes</span></h2>
+
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiumod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+
+										<p class="unread_time">1 week ago</p>
+
+										<span id="replay-btn" data-target='#target-id-1' class="unread_replay">Reply</span>
+										<span><a href="#">Reports</a></span>
+
+									</div>
+								</div>
+							</div>
+							<!--replay box start-->
+							<div class="targetElement" id="target-id-1" data-show="false">
+
+								<div class="row-contnet replay_box">
+									<div class="unread_left ">
+										<img src="images/upload_img_3.png" alt="upload_img" class="w-100">
+
+									</div>
+
+									<div class="unread_right">
+										<div class="unread_content_right">
+											<form>
+												<textarea placeholder="Write your comment here"></textarea>
+
+												<button type="submit">Send</button>
+											</form>
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--replay box end-->
+
+
+
+						</div>
+
+
+						<div class="dash_content unread_content">
+
+
+							<div class="row-contnet">
+								<div class="unread_left ">
+									<img src="images/upload_img2.png" alt="upload_img" class="w-100">
+
+								</div>
+
+								<div class="unread_right">
+									<div class="unread_content_right">
+										<h2>MW Themes</span></h2>
+
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiumod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+
+										<p class="unread_time">1 week ago</p>
+
+										<span id="replay-btn" data-target='#target-id-2' class="unread_replay">Reply</span>
+										<span><a href="#">Reports</a></span>
+
+									</div>
+								</div>
+							</div>
+							<!--replay box start-->
+							<div class="targetElement" id="target-id-2" data-show="false">
+
+								<div class="row-contnet replay_box">
+									<div class="unread_left ">
+										<img src="images/upload_img_3.png" alt="upload_img" class="w-100">
+
+									</div>
+
+									<div class="unread_right">
+										<div class="unread_content_right">
+											<form>
+												<textarea placeholder="Write your comment here"></textarea>
+
+												<button type="submit">Send</button>
+											</form>
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--replay box end-->
+
+
+
+						</div>
 					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 mt-4">
-					<div class="product_box">
-						<img src="images/newestItem6.png" alt="newestItem1" class="w-100">
-						<a href="product_detail.html" class="overlay">
-							<span>$60</span>
-							<span>Tea Club - Tea Shop PSD Template</span>
-							<span>by: Themepoo</span>
-							<span>HTML Template / E-comerce</span>
-						</a>
+					<!--earning statictics-->
+					<div class="dash_mini mt-4">
+						<h2 class="dash_mini_title">This Week’s Earning Statistics</h2>
+						<div class="dash_content earning_content">
+
+							<p>You have earned $15.12 this week</p>
+							<p>You have sold 2 items</p>
+
+						</div>
 					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 mt-4">
-					<div class="product_box">
-						<img src="images/allProduct1.jpg" alt="newestItem1" class="w-100">
-						<a href="product_detail.html" class="overlay">
-							<span>$60</span>
-							<span>Tea Club - Tea Shop PSD Template</span>
-							<span>by: Themepoo</span>
-							<span>HTML Template / E-comerce</span>
-						</a>
+					<!--approved item-->
+					<div class="dash_mini mt-4 approved_item_part" >
+						<h2 class="dash_mini_title">This Week’s Approved Item(s)</h2>
+						<div class="dash_content">
+							<div class="row">
+								<div class="col-lg-4">
+									<div class="dash_mini_img">
+										<img src="images/approved_img.png" alt="upload_img" class="w-100">
+
+										<a href="product_detail.html" class="overlay">
+
+											<span class="preview_text">Live Preview <i class="fas fa-external-link-alt" aria-hidden="true"></i></span>
+
+										</a>
+									</div>
+
+								</div>
+								<div class="col-lg-8 v-center">
+									<div class="dash_content_right">
+										<h2>Tea Club - Tea Shop PSD Template</h2>
+
+										<p>Approved on 26 October 2019</p>
+										<p>2 Sales</p>
+
+										<a class="download" href="#">Download</a>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="dash_content">
+							<div class="row">
+								<div class="col-lg-4">
+									<div class="dash_mini_img">
+										<img src="images/approved_img2.png" alt="upload_img" class="w-100">
+
+										<a href="product_detail.html" class="overlay">
+
+											<span class="preview_text">Live Preview <i class="fas fa-external-link-alt" aria-hidden="true"></i></span>
+
+										</a>
+									</div>
+
+								</div>
+								<div class="col-lg-8 v-center">
+									<div class="dash_content_right">
+										<h2>Tea Club - Tea Shop PSD Template</h2>
+
+										<p>Approved on 26 October 2019</p>
+										<p>2 Sales</p>
+
+										<a class="download" href="#">Download</a>
+
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 mt-4">
-					<div class="product_box">
-						<img src="images/allProduct2.jpg" alt="newestItem1" class="w-100">
-						<a href="product_detail.html" class="overlay">
-							<span>$60</span>
-							<span>Tea Club - Tea Shop PSD Template</span>
-							<span>by: Themepoo</span>
-							<span>HTML Template / E-comerce</span>
-						</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 mt-4">
-					<div class="product_box">
-						<img src="images/allProduct3.jpg" alt="newestItem1" class="w-100">
-						<a href="product_detail.html" class="overlay">
-							<span>$60</span>
-							<span>Tea Club - Tea Shop PSD Template</span>
-							<span>by: Themepoo</span>
-							<span>HTML Template / E-comerce</span>
-						</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 mt-4">
-					<div class="product_box">
-						<img src="images/allProduct4.jpg" alt="newestItem1" class="w-100">
-						<a href="product_detail.html" class="overlay">
-							<span>$60</span>
-							<span>Tea Club - Tea Shop PSD Template</span>
-							<span>by: Themepoo</span>
-							<span>HTML Template / E-comerce</span>
-						</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 mt-4">
-					<div class="product_box">
-						<img src="images/allProduct5.jpg" alt="newestItem1" class="w-100">
-						<a href="product_detail.html" class="overlay">
-							<span>$60</span>
-							<span>Tea Club - Tea Shop PSD Template</span>
-							<span>by: Themepoo</span>
-							<span>HTML Template / E-comerce</span>
-						</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 mt-4">
-					<div class="product_box">
-						<img src="images/allProduct6.jpg" alt="newestItem1" class="w-100">
-						<a href="product_detail.html" class="overlay">
-							<span>$60</span>
-							<span>Tea Club - Tea Shop PSD Template</span>
-							<span>by: Themepoo</span>
-							<span>HTML Template / E-comerce</span>
-						</a>
-					</div>
+					
+					
+
 				</div>
 			</div>
-			<!--Pagination-->
-			<nav aria-label="Page navigation example" class="all_item_pagi">
-				<ul class="pagination">
-					<li class="page-item"><a class="page-link" href="#">1</a></li>
-					<li class="page-item"><a class="page-link" href="#">2</a></li>
-					<li class="page-item active" aria-current="page" ><a class="page-link" href="#">3</a></li>
-					<li class="page-item"><a class="page-link" href="#">4</a></li>
-					 <span>.....</span>
-					 <li class="page-item"><a class="page-link" href="#">60</a></li>
-					<li class="page-item"><a class="page-link" href="#"><i class="fas fa-play"></i></a></li>
-				</ul>
-			</nav>
-
 		</div>
 	</section>
 
 	<!--=========================
-        product grid list start
-    ==========================-->
+		dashboard grid end
+	==========================-->
+
 
 
 
@@ -429,7 +504,7 @@
 	<!--=========================
         footer end
     ==========================-->
-    <!--=========================
+	<!--=========================
           popup part start
     ==========================-->
 	<section class="popup">
@@ -530,16 +605,16 @@
 											<p>Country</p>
 											<p>Phone Number</p>
 										</li>
-										
+
 										<li class="login_new">
-										    <select name="" id="">
-										    	<option selected>BAN</option>
-										    	<option>IND</option>
-										    	<option>SRL</option>
-										    </select>
-										    
-										    <input type="text" placeholder="Phone Number">
-											
+											<select name="" id="">
+												<option selected>BAN</option>
+												<option>IND</option>
+												<option>SRL</option>
+											</select>
+
+											<input type="text" placeholder="Phone Number">
+
 										</li>
 
 										<li>
