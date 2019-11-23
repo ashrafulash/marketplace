@@ -100,10 +100,11 @@ $(document).ready(function(){
         
         var scroll = $(document).scrollTop();
         
-        if(scroll > 200){
+        if(scroll > 400){
             
             menu.addClass("fixedMenu");
-        }else{
+        }
+		else if(scroll < 200){
             menu.removeClass("fixedMenu");
         }
    

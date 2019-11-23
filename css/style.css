@@ -1026,9 +1026,11 @@ input:focus{
 
 .preview_text{
     position: absolute;
-    left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+	left: 50%;
+	width: 100%;
+	text-align: center;
     
 }
 
@@ -1892,7 +1894,7 @@ input:focus{
 .freebie_monthly .card{
 	padding: 20px;
 	border: 0;
-	box-shadow: 0 0 20px rgba(0,0,0,.1);
+	box-shadow: 0 0px 20px rgba(0,0,0,.1);
 }
 
 .freebie_monthly .card-body h5{
@@ -1958,6 +1960,117 @@ input:focus{
 /*=============================
    freebie alltime css start
 ===============================*/
+.freebie_alltime .card{
+	padding: 20px;
+	border: 0;
+	box-shadow: 0 0px 20px rgba(0,0,0,.1);
+}
+
+.freebie_alltime .card-body{
+	position: relative;
+}
+
+.freebie_alltime .card-body h5{
+	font-size: 20px;
+	font-family: 'Arimo',sans-serif;
+	color: var(--44-col);
+	margin-bottom: 1px;
+}
+
+.freebie_alltime .card-body .star{
+	color: #ffb504;
+	padding-bottom: 5px;
+}
+
+.freebie_alltime .card-body .credit-cart{
+	width: 45px;
+	height: 45px;
+	background: #fff;
+	text-align: center;
+	line-height: 45px;
+	border-radius: 50%;
+	color: #666;
+	font-size: 14px;
+	border: 1px solid #ddd;
+	margin-left: 10px;
+}
+
+.freebie_alltime .card-body .credit-cart:hover{
+	background: var(--lin-bg);
+	border: 1px solid #fff;
+	color: #fff;
+	
+}
+.freebie_alltime .card-body .download{
+	font-size: 17px;
+    font-family: 'Arimo',sans-serif;
+    color: #666;
+    background: #fff;
+    padding: 9px 30px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.freebie_alltime .card-body .download:hover{
+	background: var(--lin-bg);
+	color: #fff;
+	border: 1px solid #fff;
+}
+
+.freebie_alltime .card-body p{
+	font-size: 14px;
+	font-family: 'Arimo',sans-serif;
+	color: var(--44-col);
+	padding-bottom: 15px;
+}
+
+.freebie_alltime .card-body h2{
+	font-size: 16px;
+	color: var(--44-col);
+	font-family: 'Arimo',sans-serif;
+	padding-bottom: 10px;
+}
+
+.freebie_alltime .card-body{
+	padding: 0;
+	padding-left: 20px;
+}
+
+
+.freebie_alltime .sideOption ul li span{
+	border-radius: 50%;
+	background: #fff;
+	
+}
+
+.freebie_alltime .sideOption label{
+	padding-left: 29px;
+	border-width: 2px;
+}
+
+
+
+.allTime_doller{
+	font-family: 'Arimo',sans-serif;
+	font-weight: 600;
+	color: var(--44-col);
+	font-size: 40px;
+	vertical-align: middle;
+	padding-right: 10px;
+}
+
+.forTheMonth{
+	font-size: 14px;
+    color: #999;
+    right: 10px;
+    bottom: -10px;
+    font-style: italic;
+    position: absolute;
+    font-family: 'Arimo',sans-serif;
+}
+
+
+
 
 
 
