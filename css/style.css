@@ -2102,13 +2102,15 @@ input:focus{
 ===============================*/
 .profile_page_header{
 	height: 520px;
-	background: #eee;
 	position: relative;
 }
 .cover_pic{
-	height: 350px;
-	width: 100%;
 	background: gray;
+	position: relative;
+	min-height: 330px;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+	
+	
 }
 
 .profile_pic{
@@ -2117,7 +2119,76 @@ input:focus{
     background: red;
     position: absolute;
     left: 50px;
-    bottom: 80px;
+    bottom: -100px;
+}
+
+.profile_page_info{}
+.profile_page_info .text{
+	margin-left: 241px;
+    margin-top: 20px;
+}
+.profile_page_info .text h2{
+	color: var(--brand-col);
+	font-family: 'Arimo',sans-serif;
+	font-size: 24px;
+}
+.profile_page_info .text p{
+	font-size: 16px;
+	color: #666;
+	font-family: 'Arimo',sans-serif;
+}
+.profile_page_info .text span{
+	color: #ffb504;
+	font-size: 18px;
+}
+
+.total_sale li{
+	font-size: 14px;
+	color: var(--44-col);
+	font-size: 18px;
+	font-weight: 600;
+	padding: 18px 38px;
+	background: #fff;
+	display: inline-block;
+	border: 1px solid #ededed;
+	border-radius: 5px;
+	margin-top: 20px;
+	box-shadow: 0 0 20px rgba(0,0,0,.1);
+	
+}
+
+.profile_social_link{
+	background: #fff;
+	border-radius: 5px;
+	margin-top: 10px;
+	box-shadow: 0 0 20px rgba(0,0,0,.1);
+	display: inline-block;
+	overflow: hidden;
+	border: 1px solid #ededed;
+	padding: 0 15px;
+	
+}
+
+.profile_social_link li{
+	color: var(--44-col);
+	font-size: 18px;
+	font-weight: 600;
+	padding: 18px 11px;
+	background: #fff;
+	display: inline-block;
+}
+
+.profile_social_link li:not(:last-child){
+	border-right: 1px solid #ededed;
+}
+
+.profile_social_link li a{
+	color: var(--44-col);
+	font-size: 18px;
+}
+
+.profile_social_link li a:hover{
+	color: var(--brand-col);
 }
 
 
