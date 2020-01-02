@@ -18,13 +18,15 @@
 /*============================
       TABLE OF CONTENT
 ------------------------------
-    1. Common CSS
-    2. header top css
-    3. menu part css
-    4. banner part css
-    5. newest item css
-    7. freebie part css
-    8. footer part css
+ 		 HOME PAGE
+==============================
+    |->  Common CSS
+    |->  header top css
+    |->	 menu part css
+    |->  banner part css
+    |->	 newest item css
+    |->  freebie part css
+    |->  footer part css
 
 
 
@@ -65,10 +67,12 @@
 ---------------------------------
     Profile page start 
 ---------------------------------
-    19. profile page css
-
-
-==============================*/
+	19. profile page css
+	
+---------------------------------
+    Admin_portfolio page
+==================================
+    |-> portfolio top css
 
 /*=============================
        Common CSS
@@ -440,11 +444,12 @@ input:focus{
 
 }
 
-.search_btn span{
+.search_btn button{
     margin: 0 5px;
     border: 0;
     background: inherit;
 }
+
 
 /*=============================
     newest item css
@@ -2116,7 +2121,7 @@ input:focus{
 .profile_pic{
 	width: 165px;
     height: 165px;
-    background: red;
+    border: 1px solid #ededed;
     position: absolute;
     left: 50px;
     bottom: -100px;
@@ -2212,9 +2217,28 @@ input:focus{
 	font-family: 'Arimo',sans-serif;
 }
 .profile_page_content ul{}
-.profile_page_content ul li{}
-.profile_page_content ul li a{}
-.profile_page_content ul li h5{}
+.profile_page_content ul li{
+	font-size: 16px;
+	color: var(--44-col);
+	line-height: 27px;
+	font-family: 'Arimo',sans-serif;
+}
+.profile_page_content ul li a{
+	color: #6e89c5;
+	font-size: 16px;
+	line-height: 28px;
+}
+
+.profile_page_content ul li a:hover{
+	color: var(--brand-col);
+}
+
+.profile_page_content ul li h5{
+	color: var(--44-col);
+	font-family: 'Arimo',sans-serif;
+	font-size: 22px;
+	padding-bottom: 10px;
+}
 
 /*=============================
    popup css start
@@ -2484,3 +2508,93 @@ input:focus{
     top: 67px;
     transform: translateX(13px);
 }
+
+/* =================================
+		portfolio top css
+=================================== */
+
+.portfolio_top_part{
+	padding-top: 60px;
+}
+
+.portfolio_picture{
+	width: 170px;
+	height: 170px;
+	border:1px solid #ededed;
+	text-align: center;
+	line-height: 160px;
+	overflow: hidden;
+
+}
+
+.portfolio_level ul li{
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	border: 1px solid #adadad;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	font-size: 20px;
+	margin-right: 8px;
+	position: relative;
+	color: #adadad;
+	vertical-align: middle;
+
+}
+.portfolio_level ul li.active{
+	background: var(--lin-bg);
+	color: #fff;
+	border-width: 0;
+}
+.portfolio_level .level_number{
+	position: absolute;
+    right: -6px;
+    bottom: 0;
+    font-size: 9px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #adadad;
+    line-height: 18px;
+    border-radius: 50%;
+    background: #fff;
+	font-family: 'Arimo',sans-serif;
+	color: var(--brand-col);
+}
+
+.portfolio_level h2{
+	font-family: 'Arimo',sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	color: var(--brand-col);
+}
+
+
+.portfolio_level p{
+	font-family: 'Arimo',sans-serif;
+	color: #666;
+	font-size: 16px;
+	padding: 2px 0;
+}
+
+.portfolio_level .star{
+	color: #ffb504;
+	padding-bottom: 8px;
+	font-weight: 400;
+	font-family: 'Arimo',sans-serif;
+}
+
+.portfolio_level h4{
+	font-size: 12px;
+	font-weight: 400;
+	font-family: 'Arimo',sans-serif;
+	color: var(--brand-col);
+	padding: 5px 0;
+	background: #fff;
+	border: 1px solid #ececec;
+	border-radius: 28px;
+	text-align: center;
+	box-shadow: 0 0 15px rgba(0,0,0,.1);
+	margin-top: 10px;
+}
+
