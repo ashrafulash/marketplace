@@ -2598,3 +2598,41 @@ input:focus{
 	margin-top: 10px;
 }
 
+.portfolio_item_list li{
+	padding-bottom: 8px;
+}
+
+.portfolio_item_list p{
+	padding: 15px 0;
+	border: 1px solid #ededed;
+	box-shadow: 0 0 15px rgba(0,0,0,.05);
+	text-align: center;
+	font-size: 14px;
+	font-weight: 600;
+	font-family: 'Arimo',sans-serif;
+	border-radius: 5px;
+	color: var(--44-col);
+
+}
+
+.portfolio_item_list .active{
+	background: var(--lin-bg);
+	color: #fff;
+	border: 0;
+}
+
+.portfolio_item_list form input{
+	border: 1px solid #F1F1F1;
+	border-radius: 5px;
+	font-family: 'Arimo',sans-serif;
+}
+
+.portfolio_item_list form input:focus{
+	border: 1px solid #F1F1F1 !important;
+	border-radius: 5px;
+}
+
+.portfolio_item_list form  input::placeholder{
+   color: #acacac;
+   font-family: 'Arimo',sans-serif;
+}
