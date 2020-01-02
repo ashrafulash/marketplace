@@ -2697,3 +2697,23 @@ input:focus{
 	line-height: 20px;
 }
 
+.total_sell{
+	border: 0!important;
+	box-shadow: none !important;
+	color: #777777 !important;
+	font-size: 22px !important;
+	font-weight: 400 !important;
+	padding-top: 15px !important;
+}
+.follower_section:not(:first-child){
+	padding-top: 30px;
+}
+.follower_section:not(:last-child){
+	padding-bottom: 20px;
+	border-bottom: 1px solid #f1f1f1;
+
+}
+
+.follower_title{
+	color: #222 !important;
+}
