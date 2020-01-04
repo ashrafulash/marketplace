@@ -1,4 +1,30 @@
 $(document).ready(function(){
+
+
+	// setting page icon change
+	(function(){
+		let btn = document.querySelectorAll(".setting_btn");
+		btn = Array.from(btn);
+		btn.map(function(pp){
+			pp.addEventListener('click', function(e){
+				changeIcon(e);
+			})
+		})
+	  	function changeIcon(e){
+			btn.map(function(exact){
+				let icon = exact.childNodes;
+					icon = Array.from(icon);
+					icon = icon[2];
+					icon.innerHTML = '<i class="fas fa-plus"></i>'
+				if(e.target.getAttribute('aria-expanded') == 'false'){
+					let minus = e.target;
+					minus.childNodes;		
+					minus.childNodes[2].innerHTML = '<i class="fas fa-minus"></i>'
+				}
+			})
+		}
+
+	}());
 	
 	
 //javascript code for repay comment box
@@ -158,8 +184,7 @@ $(document).ready(function(){
 
 
 
-	
-	
+
 })
 
 

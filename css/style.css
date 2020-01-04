@@ -1,3 +1,4 @@
+
 :root{
     --wh-col: #fff;
     --44-col: #444;
@@ -74,6 +75,11 @@
 ==================================
 	|-> portfolio top css
 	|-> portfolio content
+
+---------------------------------
+   	   Settings page
+==================================
+	|-> personal part css
 
 /*=============================
        Common CSS
@@ -2717,3 +2723,60 @@ input:focus{
 .follower_title{
 	color: #222 !important;
 }
+
+/* ===========================
+	personal part css
+============================== */
+.settings_accordian{
+
+}
+
+.settings_accordian .card{
+	border-radius: 0;
+	border: 0;
+}
+.settings_accordian .card-header{
+	padding: 0;
+}
+
+.settings_accordian >.card .card-header{
+	margin-bottom: 20px !important;
+	border: 1px solid #f5f5f5 !important;
+	background: #fff;
+}
+.settings_accordian h2.mb-0{
+	font-size: 0 !important;
+}
+
+.settings_accordian .btn-link{
+	color: var(--44-col);
+	display: block;
+	width:100%;
+	font-size: 16px;
+	font-family: 'Arimo',sans-serif;
+	text-align: left;
+	padding: 10px 20px;
+	outline: 0 !important;
+	border: 0;
+	border-radius: 0;
+	box-shadow: 0 0 20px rgba(0,0,0,.1) !important;
+}
+.settings_accordian .btn-link:focus{
+	padding: 10px 20px;
+}
+
+.settings_accordian .btn-link span:last-child{
+	float: right;
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+.settings_accordian button[aria-expanded="true"]{
+	background: var(--lin-bg);
+	color: #fff;
+}
+
+.settings_accordian .card-body{
+	transform: translateY(-20px);
+}
+
